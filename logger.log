@@ -1,0 +1,679 @@
+Mar 07, 2018 11:03:07 AM com.stefanski.amazonbooksearcher.Launcher initializeNewSearch
+FINE: >> Default search, searching for: "sql"
+Mar 07, 2018 11:03:08 AM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+FINEST: ProxySelector Request for https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=sql
+Mar 07, 2018 11:03:08 AM sun.net.www.protocol.https.HttpsClient New
+FINEST: Looking for HttpClient for URL https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=sql and proxy value of DIRECT
+Mar 07, 2018 11:03:08 AM sun.net.www.protocol.https.HttpsClient <init>
+FINEST: Creating new HttpsClient with url:https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=sql and proxy:DIRECT with connect timeout:-1
+Mar 07, 2018 11:03:08 AM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+FINEST: Proxy used: DIRECT
+Mar 07, 2018 11:03:08 AM sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@39fb3ab65 pairs: {GET /s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=sql HTTP/1.1: null}{User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36 OPR/50.0.2762.67}{Host: www.amazon.com}{Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2}{Connection: keep-alive}
+Mar 07, 2018 11:03:09 AM sun.net.www.protocol.http.HttpURLConnection getInputStream0
+FINE: sun.net.www.MessageHeader@6276ae3413 pairs: {null: HTTP/1.1 200 OK}{Server: Server}{Content-Type: text/html;charset=UTF-8}{Strict-Transport-Security: max-age=47474747; includeSubDomains; preload}{X-UA-Compatible: IE=edge}{X-Frame-Options: SAMEORIGIN}{Vary: user-agent}{Date: Wed, 07 Mar 2018 10:03:09 GMT}{Transfer-Encoding: chunked}{Connection: keep-alive}{Connection: Transfer-Encoding}{Set-Cookie: session-id=140-1546384-0420752; Domain=.amazon.com; Expires=Tue, 01-Jan-2036 08:00:01 GMT; Path=/}{Set-Cookie: session-id-time=2082787201l; Domain=.amazon.com; Expires=Tue, 01-Jan-2036 08:00:01 GMT; Path=/}
+Mar 07, 2018 11:03:11 AM com.stefanski.amazonbooksearcher.util.IOUtil write
+FINER: Writing file...
+Mar 07, 2018 11:03:11 AM com.stefanski.amazonbooksearcher.util.IOUtil write
+FINER: --DONE!
+Mar 07, 2018 11:03:12 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask run
+FINE: Multithread web page download	--START
+Mar 07, 2018 11:03:12 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask run
+FINER: <> Amount of links to download: 27
+Mar 07, 2018 11:03:12 AM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+FINEST: ProxySelector Request for https://www.amazon.com/SQL-Minutes-Sams-Teach-Yourself/dp/0672336073/ref=sr_1_3/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-3&amp;keywords=sql
+Mar 07, 2018 11:03:12 AM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+FINEST: ProxySelector Request for https://www.amazon.com/SQL-Practice-Problems-learn-doing/dp/1520807635/ref=sr_1_9/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-9&amp;keywords=sql
+Mar 07, 2018 11:03:12 AM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+FINEST: ProxySelector Request for https://www.amazon.com/SQL-QuickStart-Guide-Simplified-Beginners/dp/1508767483/ref=sr_1_8/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-8&amp;keywords=sql
+Mar 07, 2018 11:03:12 AM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+FINEST: ProxySelector Request for https://www.amazon.com/All-One-Dummies-Allen-Taylor/dp/0470929960/ref=sr_1_5/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-5&amp;keywords=sql
+Mar 07, 2018 11:03:12 AM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+FINEST: ProxySelector Request for https://www.amazon.com/SQL-Queries-Mere-Mortals-Hands/dp/0321992474/ref=sr_1_7/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-7&amp;keywords=sql
+Mar 07, 2018 11:03:12 AM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+FINEST: ProxySelector Request for https://www.amazon.com/Learning-SQL-Master-Fundamentals/dp/0596520832/ref=sr_1_6/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-6&amp;keywords=sql
+Mar 07, 2018 11:03:12 AM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+FINEST: ProxySelector Request for https://www.amazon.com/Sql-Guide-Quick-Study-SQL/dp/1572229160/ref=sr_1_4/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-4&amp;keywords=sql
+Mar 07, 2018 11:03:12 AM sun.net.www.protocol.https.HttpsClient New
+FINEST: Looking for HttpClient for URL https://www.amazon.com/Learning-SQL-Master-Fundamentals/dp/0596520832/ref=sr_1_6/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-6&amp;keywords=sql and proxy value of DIRECT
+Mar 07, 2018 11:03:12 AM sun.net.www.protocol.https.HttpsClient New
+FINEST: Looking for HttpClient for URL https://www.amazon.com/SQL-Queries-Mere-Mortals-Hands/dp/0321992474/ref=sr_1_7/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-7&amp;keywords=sql and proxy value of DIRECT
+Mar 07, 2018 11:03:12 AM sun.net.www.protocol.https.HttpsClient New
+FINEST: Looking for HttpClient for URL https://www.amazon.com/All-One-Dummies-Allen-Taylor/dp/0470929960/ref=sr_1_5/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-5&amp;keywords=sql and proxy value of DIRECT
+Mar 07, 2018 11:03:12 AM sun.net.www.protocol.https.HttpsClient New
+FINEST: Looking for HttpClient for URL https://www.amazon.com/SQL-QuickStart-Guide-Simplified-Beginners/dp/1508767483/ref=sr_1_8/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-8&amp;keywords=sql and proxy value of DIRECT
+Mar 07, 2018 11:03:12 AM sun.net.www.protocol.https.HttpsClient New
+FINEST: Looking for HttpClient for URL https://www.amazon.com/SQL-Practice-Problems-learn-doing/dp/1520807635/ref=sr_1_9/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-9&amp;keywords=sql and proxy value of DIRECT
+Mar 07, 2018 11:03:12 AM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+FINEST: ProxySelector Request for https://www.amazon.com/Getting-Started-SQL-Hands-Beginners/dp/1491938617/ref=sr_1_15/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-15&amp;keywords=sql
+Mar 07, 2018 11:03:12 AM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+FINEST: ProxySelector Request for https://www.amazon.com/SQL-Pocket-Guide-Usage/dp/1449394094/ref=sr_1_14/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-14&amp;keywords=sql
+Mar 07, 2018 11:03:12 AM sun.net.www.protocol.https.HttpsClient New
+FINEST: Looking for HttpClient for URL https://www.amazon.com/SQL-Minutes-Sams-Teach-Yourself/dp/0672336073/ref=sr_1_3/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-3&amp;keywords=sql and proxy value of DIRECT
+Mar 07, 2018 11:03:12 AM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+FINEST: ProxySelector Request for https://www.amazon.com/SQL-Minutes-Sams-Teach-Yourself/dp/0135182794/ref=sr_1_10/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-10&amp;keywords=sql
+Mar 07, 2018 11:03:12 AM sun.net.www.protocol.https.HttpsClient <init>
+FINEST: Creating new HttpsClient with url:https://www.amazon.com/SQL-Minutes-Sams-Teach-Yourself/dp/0672336073/ref=sr_1_3/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-3&amp;keywords=sql and proxy:DIRECT with connect timeout:-1
+Mar 07, 2018 11:03:12 AM sun.net.www.protocol.https.HttpsClient New
+FINEST: Looking for HttpClient for URL https://www.amazon.com/SQL-Pocket-Guide-Usage/dp/1449394094/ref=sr_1_14/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-14&amp;keywords=sql and proxy value of DIRECT
+Mar 07, 2018 11:03:12 AM sun.net.www.protocol.https.HttpsClient New
+FINEST: Looking for HttpClient for URL https://www.amazon.com/Getting-Started-SQL-Hands-Beginners/dp/1491938617/ref=sr_1_15/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-15&amp;keywords=sql and proxy value of DIRECT
+Mar 07, 2018 11:03:12 AM sun.net.www.protocol.https.HttpsClient <init>
+FINEST: Creating new HttpsClient with url:https://www.amazon.com/SQL-Practice-Problems-learn-doing/dp/1520807635/ref=sr_1_9/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-9&amp;keywords=sql and proxy:DIRECT with connect timeout:-1
+Mar 07, 2018 11:03:12 AM sun.net.www.protocol.https.HttpsClient <init>
+FINEST: Creating new HttpsClient with url:https://www.amazon.com/SQL-QuickStart-Guide-Simplified-Beginners/dp/1508767483/ref=sr_1_8/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-8&amp;keywords=sql and proxy:DIRECT with connect timeout:-1
+Mar 07, 2018 11:03:12 AM sun.net.www.protocol.https.HttpsClient <init>
+FINEST: Creating new HttpsClient with url:https://www.amazon.com/All-One-Dummies-Allen-Taylor/dp/0470929960/ref=sr_1_5/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-5&amp;keywords=sql and proxy:DIRECT with connect timeout:-1
+Mar 07, 2018 11:03:12 AM sun.net.www.protocol.https.HttpsClient <init>
+FINEST: Creating new HttpsClient with url:https://www.amazon.com/SQL-Queries-Mere-Mortals-Hands/dp/0321992474/ref=sr_1_7/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-7&amp;keywords=sql and proxy:DIRECT with connect timeout:-1
+Mar 07, 2018 11:03:12 AM sun.net.www.protocol.https.HttpsClient <init>
+FINEST: Creating new HttpsClient with url:https://www.amazon.com/Learning-SQL-Master-Fundamentals/dp/0596520832/ref=sr_1_6/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-6&amp;keywords=sql and proxy:DIRECT with connect timeout:-1
+Mar 07, 2018 11:03:12 AM sun.net.www.protocol.https.HttpsClient New
+FINEST: Looking for HttpClient for URL https://www.amazon.com/Sql-Guide-Quick-Study-SQL/dp/1572229160/ref=sr_1_4/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-4&amp;keywords=sql and proxy value of DIRECT
+Mar 07, 2018 11:03:12 AM sun.net.www.protocol.https.HttpsClient <init>
+FINEST: Creating new HttpsClient with url:https://www.amazon.com/Getting-Started-SQL-Hands-Beginners/dp/1491938617/ref=sr_1_15/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-15&amp;keywords=sql and proxy:DIRECT with connect timeout:-1
+Mar 07, 2018 11:03:12 AM sun.net.www.protocol.https.HttpsClient <init>
+FINEST: Creating new HttpsClient with url:https://www.amazon.com/SQL-Pocket-Guide-Usage/dp/1449394094/ref=sr_1_14/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-14&amp;keywords=sql and proxy:DIRECT with connect timeout:-1
+Mar 07, 2018 11:03:12 AM sun.net.www.protocol.https.HttpsClient New
+FINEST: Looking for HttpClient for URL https://www.amazon.com/SQL-Minutes-Sams-Teach-Yourself/dp/0135182794/ref=sr_1_10/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-10&amp;keywords=sql and proxy value of DIRECT
+Mar 07, 2018 11:03:12 AM sun.net.www.protocol.https.HttpsClient <init>
+FINEST: Creating new HttpsClient with url:https://www.amazon.com/Sql-Guide-Quick-Study-SQL/dp/1572229160/ref=sr_1_4/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-4&amp;keywords=sql and proxy:DIRECT with connect timeout:-1
+Mar 07, 2018 11:03:12 AM sun.net.www.protocol.https.HttpsClient <init>
+FINEST: Creating new HttpsClient with url:https://www.amazon.com/SQL-Minutes-Sams-Teach-Yourself/dp/0135182794/ref=sr_1_10/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-10&amp;keywords=sql and proxy:DIRECT with connect timeout:-1
+Mar 07, 2018 11:03:12 AM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+FINEST: Proxy used: DIRECT
+Mar 07, 2018 11:03:12 AM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+FINEST: Proxy used: DIRECT
+Mar 07, 2018 11:03:12 AM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+FINEST: Proxy used: DIRECT
+Mar 07, 2018 11:03:12 AM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+FINEST: Proxy used: DIRECT
+Mar 07, 2018 11:03:12 AM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+FINEST: Proxy used: DIRECT
+Mar 07, 2018 11:03:12 AM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+FINEST: Proxy used: DIRECT
+Mar 07, 2018 11:03:12 AM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+FINEST: Proxy used: DIRECT
+Mar 07, 2018 11:03:12 AM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+FINEST: Proxy used: DIRECT
+Mar 07, 2018 11:03:12 AM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+FINEST: Proxy used: DIRECT
+Mar 07, 2018 11:03:12 AM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+FINEST: Proxy used: DIRECT
+Mar 07, 2018 11:03:12 AM sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@2b34976d5 pairs: {GET /SQL-QuickStart-Guide-Simplified-Beginners/dp/1508767483/ref=sr_1_8/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-8&amp;keywords=sql HTTP/1.1: null}{User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36 OPR/50.0.2762.67}{Host: www.amazon.com}{Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2}{Connection: keep-alive}
+Mar 07, 2018 11:03:12 AM sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@2e0ba7315 pairs: {GET /Learning-SQL-Master-Fundamentals/dp/0596520832/ref=sr_1_6/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-6&amp;keywords=sql HTTP/1.1: null}{User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36 OPR/50.0.2762.67}{Host: www.amazon.com}{Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2}{Connection: keep-alive}
+Mar 07, 2018 11:03:12 AM sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@7bbbc0aa5 pairs: {GET /SQL-Minutes-Sams-Teach-Yourself/dp/0135182794/ref=sr_1_10/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-10&amp;keywords=sql HTTP/1.1: null}{User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36 OPR/50.0.2762.67}{Host: www.amazon.com}{Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2}{Connection: keep-alive}
+Mar 07, 2018 11:03:12 AM sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@3ef795465 pairs: {GET /SQL-Minutes-Sams-Teach-Yourself/dp/0672336073/ref=sr_1_3/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-3&amp;keywords=sql HTTP/1.1: null}{User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36 OPR/50.0.2762.67}{Host: www.amazon.com}{Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2}{Connection: keep-alive}
+Mar 07, 2018 11:03:12 AM sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@1cd8bc785 pairs: {GET /All-One-Dummies-Allen-Taylor/dp/0470929960/ref=sr_1_5/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-5&amp;keywords=sql HTTP/1.1: null}{User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36 OPR/50.0.2762.67}{Host: www.amazon.com}{Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2}{Connection: keep-alive}
+Mar 07, 2018 11:03:12 AM sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@76b953fa5 pairs: {GET /SQL-Pocket-Guide-Usage/dp/1449394094/ref=sr_1_14/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-14&amp;keywords=sql HTTP/1.1: null}{User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36 OPR/50.0.2762.67}{Host: www.amazon.com}{Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2}{Connection: keep-alive}
+Mar 07, 2018 11:03:12 AM sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@19c708b5 pairs: {GET /Getting-Started-SQL-Hands-Beginners/dp/1491938617/ref=sr_1_15/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-15&amp;keywords=sql HTTP/1.1: null}{User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36 OPR/50.0.2762.67}{Host: www.amazon.com}{Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2}{Connection: keep-alive}
+Mar 07, 2018 11:03:12 AM sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@38f3e1aa5 pairs: {GET /SQL-Practice-Problems-learn-doing/dp/1520807635/ref=sr_1_9/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-9&amp;keywords=sql HTTP/1.1: null}{User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36 OPR/50.0.2762.67}{Host: www.amazon.com}{Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2}{Connection: keep-alive}
+Mar 07, 2018 11:03:12 AM sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@60824305 pairs: {GET /Sql-Guide-Quick-Study-SQL/dp/1572229160/ref=sr_1_4/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-4&amp;keywords=sql HTTP/1.1: null}{User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36 OPR/50.0.2762.67}{Host: www.amazon.com}{Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2}{Connection: keep-alive}
+Mar 07, 2018 11:03:12 AM sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@5e54a5015 pairs: {GET /SQL-Queries-Mere-Mortals-Hands/dp/0321992474/ref=sr_1_7/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-7&amp;keywords=sql HTTP/1.1: null}{User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36 OPR/50.0.2762.67}{Host: www.amazon.com}{Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2}{Connection: keep-alive}
+Mar 07, 2018 11:03:12 AM sun.net.www.protocol.http.HttpURLConnection getInputStream0
+FINE: sun.net.www.MessageHeader@449efedc16 pairs: {null: HTTP/1.1 200 OK}{Server: Server}{Content-Type: text/html;charset=UTF-8}{Strict-Transport-Security: max-age=47474747; includeSubDomains; preload}{P3P: policyref="https://www.amazon.com/w3c/p3p.xml",CP="CAO DSP LAW CUR ADM IVAo IVDo CONo OTPo OUR DELi PUBi OTRi BUS PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA HEA PRE LOC GOV OTC "}{X-Frame-Options: SAMEORIGIN}{Cache-Control: no-cache}{Pragma: no-cache}{Expires: -1}{Vary: user-agent}{Date: Wed, 07 Mar 2018 10:03:13 GMT}{Transfer-Encoding: chunked}{Connection: keep-alive}{Connection: Transfer-Encoding}{Set-Cookie: session-id=140-1546384-0420752; Domain=.amazon.com; Expires=Tue, 01-Jan-2036 08:00:01 GMT; Path=/}{Set-Cookie: session-id-time=2082787201l; Domain=.amazon.com; Expires=Tue, 01-Jan-2036 08:00:01 GMT; Path=/}
+Mar 07, 2018 11:03:12 AM sun.net.www.protocol.http.HttpURLConnection getInputStream0
+FINE: sun.net.www.MessageHeader@2a34262816 pairs: {null: HTTP/1.1 200 OK}{Server: Server}{Content-Type: text/html;charset=UTF-8}{Strict-Transport-Security: max-age=47474747; includeSubDomains; preload}{P3P: policyref="https://www.amazon.com/w3c/p3p.xml",CP="CAO DSP LAW CUR ADM IVAo IVDo CONo OTPo OUR DELi PUBi OTRi BUS PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA HEA PRE LOC GOV OTC "}{X-Frame-Options: SAMEORIGIN}{Cache-Control: no-cache}{Pragma: no-cache}{Expires: -1}{Vary: user-agent}{Date: Wed, 07 Mar 2018 10:03:13 GMT}{Transfer-Encoding: chunked}{Connection: keep-alive}{Connection: Transfer-Encoding}{Set-Cookie: session-id=140-1546384-0420752; Domain=.amazon.com; Expires=Tue, 01-Jan-2036 08:00:01 GMT; Path=/}{Set-Cookie: session-id-time=2082787201l; Domain=.amazon.com; Expires=Tue, 01-Jan-2036 08:00:01 GMT; Path=/}
+Mar 07, 2018 11:03:12 AM sun.net.www.protocol.http.HttpURLConnection getInputStream0
+FINE: sun.net.www.MessageHeader@18e73b3b16 pairs: {null: HTTP/1.1 200 OK}{Server: Server}{Content-Type: text/html;charset=UTF-8}{Strict-Transport-Security: max-age=47474747; includeSubDomains; preload}{P3P: policyref="https://www.amazon.com/w3c/p3p.xml",CP="CAO DSP LAW CUR ADM IVAo IVDo CONo OTPo OUR DELi PUBi OTRi BUS PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA HEA PRE LOC GOV OTC "}{X-Frame-Options: SAMEORIGIN}{Cache-Control: no-cache}{Pragma: no-cache}{Expires: -1}{Vary: user-agent}{Date: Wed, 07 Mar 2018 10:03:13 GMT}{Transfer-Encoding: chunked}{Connection: keep-alive}{Connection: Transfer-Encoding}{Set-Cookie: session-id=140-1546384-0420752; Domain=.amazon.com; Expires=Tue, 01-Jan-2036 08:00:01 GMT; Path=/}{Set-Cookie: session-id-time=2082787201l; Domain=.amazon.com; Expires=Tue, 01-Jan-2036 08:00:01 GMT; Path=/}
+Mar 07, 2018 11:03:12 AM sun.net.www.protocol.http.HttpURLConnection getInputStream0
+FINE: sun.net.www.MessageHeader@2f0b16d316 pairs: {null: HTTP/1.1 200 OK}{Server: Server}{Content-Type: text/html;charset=UTF-8}{Strict-Transport-Security: max-age=47474747; includeSubDomains; preload}{P3P: policyref="https://www.amazon.com/w3c/p3p.xml",CP="CAO DSP LAW CUR ADM IVAo IVDo CONo OTPo OUR DELi PUBi OTRi BUS PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA HEA PRE LOC GOV OTC "}{X-Frame-Options: SAMEORIGIN}{Cache-Control: no-cache}{Pragma: no-cache}{Expires: -1}{Vary: user-agent}{Date: Wed, 07 Mar 2018 10:03:13 GMT}{Transfer-Encoding: chunked}{Connection: keep-alive}{Connection: Transfer-Encoding}{Set-Cookie: session-id=140-1546384-0420752; Domain=.amazon.com; Expires=Tue, 01-Jan-2036 08:00:01 GMT; Path=/}{Set-Cookie: session-id-time=2082787201l; Domain=.amazon.com; Expires=Tue, 01-Jan-2036 08:00:01 GMT; Path=/}
+Mar 07, 2018 11:03:12 AM sun.net.www.protocol.http.HttpURLConnection getInputStream0
+FINE: sun.net.www.MessageHeader@237a02916 pairs: {null: HTTP/1.1 200 OK}{Server: Server}{Content-Type: text/html;charset=UTF-8}{Strict-Transport-Security: max-age=47474747; includeSubDomains; preload}{P3P: policyref="https://www.amazon.com/w3c/p3p.xml",CP="CAO DSP LAW CUR ADM IVAo IVDo CONo OTPo OUR DELi PUBi OTRi BUS PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA HEA PRE LOC GOV OTC "}{X-Frame-Options: SAMEORIGIN}{Cache-Control: no-cache}{Pragma: no-cache}{Expires: -1}{Vary: user-agent}{Date: Wed, 07 Mar 2018 10:03:13 GMT}{Transfer-Encoding: chunked}{Connection: keep-alive}{Connection: Transfer-Encoding}{Set-Cookie: session-id=140-1546384-0420752; Domain=.amazon.com; Expires=Tue, 01-Jan-2036 08:00:01 GMT; Path=/}{Set-Cookie: session-id-time=2082787201l; Domain=.amazon.com; Expires=Tue, 01-Jan-2036 08:00:01 GMT; Path=/}
+Mar 07, 2018 11:03:13 AM sun.net.www.protocol.http.HttpURLConnection getInputStream0
+FINE: sun.net.www.MessageHeader@5a6b3a1316 pairs: {null: HTTP/1.1 200 OK}{Server: Server}{Content-Type: text/html;charset=UTF-8}{Strict-Transport-Security: max-age=47474747; includeSubDomains; preload}{P3P: policyref="https://www.amazon.com/w3c/p3p.xml",CP="CAO DSP LAW CUR ADM IVAo IVDo CONo OTPo OUR DELi PUBi OTRi BUS PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA HEA PRE LOC GOV OTC "}{X-Frame-Options: SAMEORIGIN}{Cache-Control: no-cache}{Pragma: no-cache}{Expires: -1}{Vary: user-agent}{Date: Wed, 07 Mar 2018 10:03:13 GMT}{Transfer-Encoding: chunked}{Connection: keep-alive}{Connection: Transfer-Encoding}{Set-Cookie: session-id=140-1546384-0420752; Domain=.amazon.com; Expires=Tue, 01-Jan-2036 08:00:01 GMT; Path=/}{Set-Cookie: session-id-time=2082787201l; Domain=.amazon.com; Expires=Tue, 01-Jan-2036 08:00:01 GMT; Path=/}
+Mar 07, 2018 11:03:13 AM sun.net.www.protocol.http.HttpURLConnection getInputStream0
+FINE: sun.net.www.MessageHeader@3ac8164016 pairs: {null: HTTP/1.1 200 OK}{Server: Server}{Content-Type: text/html;charset=UTF-8}{Strict-Transport-Security: max-age=47474747; includeSubDomains; preload}{P3P: policyref="https://www.amazon.com/w3c/p3p.xml",CP="CAO DSP LAW CUR ADM IVAo IVDo CONo OTPo OUR DELi PUBi OTRi BUS PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA HEA PRE LOC GOV OTC "}{X-Frame-Options: SAMEORIGIN}{Cache-Control: no-cache}{Pragma: no-cache}{Expires: -1}{Vary: user-agent}{Date: Wed, 07 Mar 2018 10:03:13 GMT}{Transfer-Encoding: chunked}{Connection: keep-alive}{Connection: Transfer-Encoding}{Set-Cookie: session-id=140-1546384-0420752; Domain=.amazon.com; Expires=Tue, 01-Jan-2036 08:00:01 GMT; Path=/}{Set-Cookie: session-id-time=2082787201l; Domain=.amazon.com; Expires=Tue, 01-Jan-2036 08:00:01 GMT; Path=/}
+Mar 07, 2018 11:03:13 AM sun.net.www.protocol.http.HttpURLConnection getInputStream0
+FINE: sun.net.www.MessageHeader@7f844b0516 pairs: {null: HTTP/1.1 200 OK}{Server: Server}{Content-Type: text/html;charset=UTF-8}{Strict-Transport-Security: max-age=47474747; includeSubDomains; preload}{P3P: policyref="https://www.amazon.com/w3c/p3p.xml",CP="CAO DSP LAW CUR ADM IVAo IVDo CONo OTPo OUR DELi PUBi OTRi BUS PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA HEA PRE LOC GOV OTC "}{X-Frame-Options: SAMEORIGIN}{Cache-Control: no-cache}{Pragma: no-cache}{Expires: -1}{Vary: user-agent}{Date: Wed, 07 Mar 2018 10:03:13 GMT}{Transfer-Encoding: chunked}{Connection: keep-alive}{Connection: Transfer-Encoding}{Set-Cookie: session-id=140-1546384-0420752; Domain=.amazon.com; Expires=Tue, 01-Jan-2036 08:00:01 GMT; Path=/}{Set-Cookie: session-id-time=2082787201l; Domain=.amazon.com; Expires=Tue, 01-Jan-2036 08:00:01 GMT; Path=/}
+Mar 07, 2018 11:03:13 AM sun.net.www.protocol.http.HttpURLConnection getInputStream0
+FINE: sun.net.www.MessageHeader@7286d9f516 pairs: {null: HTTP/1.1 200 OK}{Server: Server}{Content-Type: text/html;charset=UTF-8}{Strict-Transport-Security: max-age=47474747; includeSubDomains; preload}{P3P: policyref="https://www.amazon.com/w3c/p3p.xml",CP="CAO DSP LAW CUR ADM IVAo IVDo CONo OTPo OUR DELi PUBi OTRi BUS PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA HEA PRE LOC GOV OTC "}{X-Frame-Options: SAMEORIGIN}{Cache-Control: no-cache}{Pragma: no-cache}{Expires: -1}{Vary: user-agent}{Date: Wed, 07 Mar 2018 10:03:13 GMT}{Transfer-Encoding: chunked}{Connection: keep-alive}{Connection: Transfer-Encoding}{Set-Cookie: session-id=140-1546384-0420752; Domain=.amazon.com; Expires=Tue, 01-Jan-2036 08:00:01 GMT; Path=/}{Set-Cookie: session-id-time=2082787201l; Domain=.amazon.com; Expires=Tue, 01-Jan-2036 08:00:01 GMT; Path=/}
+Mar 07, 2018 11:03:13 AM sun.net.www.protocol.http.HttpURLConnection getInputStream0
+FINE: sun.net.www.MessageHeader@7df168d016 pairs: {null: HTTP/1.1 200 OK}{Server: Server}{Content-Type: text/html;charset=UTF-8}{Strict-Transport-Security: max-age=47474747; includeSubDomains; preload}{P3P: policyref="https://www.amazon.com/w3c/p3p.xml",CP="CAO DSP LAW CUR ADM IVAo IVDo CONo OTPo OUR DELi PUBi OTRi BUS PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA HEA PRE LOC GOV OTC "}{X-Frame-Options: SAMEORIGIN}{Cache-Control: no-cache}{Pragma: no-cache}{Expires: -1}{Vary: user-agent}{Date: Wed, 07 Mar 2018 10:03:13 GMT}{Transfer-Encoding: chunked}{Connection: keep-alive}{Connection: Transfer-Encoding}{Set-Cookie: session-id=140-1546384-0420752; Domain=.amazon.com; Expires=Tue, 01-Jan-2036 08:00:01 GMT; Path=/}{Set-Cookie: session-id-time=2082787201l; Domain=.amazon.com; Expires=Tue, 01-Jan-2036 08:00:01 GMT; Path=/}
+Mar 07, 2018 11:03:15 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask download
+FINER: Task is cancelled
+Mar 07, 2018 11:03:15 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask download
+FINER: Task is cancelled
+Mar 07, 2018 11:03:15 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask download
+FINER: Task is cancelled
+Mar 07, 2018 11:03:15 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask download
+FINER: Task is cancelled
+Mar 07, 2018 11:03:15 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask download
+FINER: Task is cancelled
+Mar 07, 2018 11:03:15 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask download
+FINER: Task is cancelled
+Mar 07, 2018 11:03:15 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask download
+FINER: Task is cancelled
+Mar 07, 2018 11:03:15 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask download
+FINER: Task is cancelled
+Mar 07, 2018 11:03:15 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask download
+FINER: Task is cancelled
+Mar 07, 2018 11:03:15 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask download
+FINER: Task is cancelled
+Mar 07, 2018 11:03:15 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask download
+FINER: Task is cancelled
+Mar 07, 2018 11:03:15 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask download
+FINER: Task is cancelled
+Mar 07, 2018 11:03:15 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask download
+FINER: Task is cancelled
+Mar 07, 2018 11:03:15 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask download
+FINER: Task is cancelled
+Mar 07, 2018 11:03:15 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask download
+FINER: Task is cancelled
+Mar 07, 2018 11:03:15 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask download
+FINER: Task is cancelled
+Mar 07, 2018 11:03:15 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask download
+FINER: Task is cancelled
+Mar 07, 2018 11:03:15 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask download
+FINER: Task is cancelled
+Mar 07, 2018 11:03:15 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask download
+FINER: Task is cancelled
+Mar 07, 2018 11:03:15 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask download
+FINER: Task is cancelled
+Mar 07, 2018 11:03:15 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask download
+FINER: Task is cancelled
+Mar 07, 2018 11:03:15 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask download
+FINER: Task is cancelled
+Mar 07, 2018 11:03:15 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask download
+FINER: Task is cancelled
+Mar 07, 2018 11:03:15 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask download
+FINER: Task is cancelled
+Mar 07, 2018 11:03:15 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask download
+FINER: Task is cancelled
+Mar 07, 2018 11:03:15 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask download
+FINER: Task is cancelled
+Mar 07, 2018 11:03:15 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask download
+FINER: Task is cancelled
+Mar 07, 2018 11:03:15 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask run
+FINE: Multithread web page download	--START
+Mar 07, 2018 11:03:15 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask run
+FINER: <> Amount of links to download: 17
+Mar 07, 2018 11:03:15 AM com.stefanski.amazonbooksearcher.util.IOUtil write
+FINER: Writing file...
+Mar 07, 2018 11:03:15 AM com.stefanski.amazonbooksearcher.util.IOUtil write
+FINER: --DONE!
+Mar 07, 2018 11:03:15 AM com.stefanski.amazonbooksearcher.util.IOUtil write
+FINER: Writing file...
+Mar 07, 2018 11:03:15 AM com.stefanski.amazonbooksearcher.util.IOUtil write
+FINER: --DONE!
+Mar 07, 2018 11:03:15 AM com.stefanski.amazonbooksearcher.util.IOUtil write
+FINER: Writing file...
+Mar 07, 2018 11:03:15 AM com.stefanski.amazonbooksearcher.util.IOUtil write
+FINER: Writing file...
+Mar 07, 2018 11:03:15 AM com.stefanski.amazonbooksearcher.util.IOUtil write
+FINER: --DONE!
+Mar 07, 2018 11:03:15 AM com.stefanski.amazonbooksearcher.util.IOUtil write
+FINER: --DONE!
+Mar 07, 2018 11:03:16 AM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+FINEST: ProxySelector Request for https://www.amazon.com/Data-Analysis-Using-SQL-Excel/dp/111902143X/ref=sr_1_16/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-16&amp;keywords=sql
+Mar 07, 2018 11:03:16 AM sun.net.www.protocol.https.HttpsClient New
+FINEST: Looking for HttpClient for URL https://www.amazon.com/Data-Analysis-Using-SQL-Excel/dp/111902143X/ref=sr_1_16/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-16&amp;keywords=sql and proxy value of DIRECT
+Mar 07, 2018 11:03:16 AM sun.net.www.protocol.https.HttpsClient <init>
+FINEST: Creating new HttpsClient with url:https://www.amazon.com/Data-Analysis-Using-SQL-Excel/dp/111902143X/ref=sr_1_16/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-16&amp;keywords=sql and proxy:DIRECT with connect timeout:-1
+Mar 07, 2018 11:03:16 AM com.stefanski.amazonbooksearcher.util.IOUtil write
+FINER: Writing file...
+Mar 07, 2018 11:03:16 AM com.stefanski.amazonbooksearcher.util.IOUtil write
+FINER: --DONE!
+Mar 07, 2018 11:03:16 AM com.stefanski.amazonbooksearcher.util.IOUtil write
+FINER: Writing file...
+Mar 07, 2018 11:03:16 AM com.stefanski.amazonbooksearcher.util.IOUtil write
+FINER: --DONE!
+Mar 07, 2018 11:03:16 AM com.stefanski.amazonbooksearcher.util.IOUtil write
+FINER: Writing file...
+Mar 07, 2018 11:03:16 AM com.stefanski.amazonbooksearcher.util.IOUtil write
+FINER: --DONE!
+Mar 07, 2018 11:03:16 AM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+FINEST: Proxy used: DIRECT
+Mar 07, 2018 11:03:16 AM com.stefanski.amazonbooksearcher.util.IOUtil write
+FINER: Writing file...
+Mar 07, 2018 11:03:16 AM com.stefanski.amazonbooksearcher.util.IOUtil write
+FINER: --DONE!
+Mar 07, 2018 11:03:16 AM sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@2eed3a3c5 pairs: {GET /Data-Analysis-Using-SQL-Excel/dp/111902143X/ref=sr_1_16/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-16&amp;keywords=sql HTTP/1.1: null}{User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36 OPR/50.0.2762.67}{Host: www.amazon.com}{Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2}{Connection: keep-alive}
+Mar 07, 2018 11:03:16 AM com.stefanski.amazonbooksearcher.util.IOUtil write
+FINER: Writing file...
+Mar 07, 2018 11:03:16 AM com.stefanski.amazonbooksearcher.util.IOUtil write
+FINER: --DONE!
+Mar 07, 2018 11:03:16 AM com.stefanski.amazonbooksearcher.util.IOUtil write
+FINER: Writing file...
+Mar 07, 2018 11:03:16 AM com.stefanski.amazonbooksearcher.util.IOUtil write
+FINER: --DONE!
+Mar 07, 2018 11:03:16 AM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+FINEST: ProxySelector Request for https://www.amazon.com/SQL-Programming-Management-Step-Step/dp/1539916057/ref=sr_1_17/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-17&amp;keywords=sql
+Mar 07, 2018 11:03:16 AM sun.net.www.protocol.https.HttpsClient New
+FINEST: Looking for HttpClient for URL https://www.amazon.com/SQL-Programming-Management-Step-Step/dp/1539916057/ref=sr_1_17/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-17&amp;keywords=sql and proxy value of DIRECT
+Mar 07, 2018 11:03:16 AM sun.net.www.protocol.https.HttpsClient <init>
+FINEST: Creating new HttpsClient with url:https://www.amazon.com/SQL-Programming-Management-Step-Step/dp/1539916057/ref=sr_1_17/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-17&amp;keywords=sql and proxy:DIRECT with connect timeout:-1
+Mar 07, 2018 11:03:16 AM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+FINEST: ProxySelector Request for https://www.amazon.com/SQL-Queries-Mere-Mortals-Hands/dp/0134858336/ref=sr_1_18/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-18&amp;keywords=sql
+Mar 07, 2018 11:03:16 AM sun.net.www.protocol.https.HttpsClient New
+FINEST: Looking for HttpClient for URL https://www.amazon.com/SQL-Queries-Mere-Mortals-Hands/dp/0134858336/ref=sr_1_18/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-18&amp;keywords=sql and proxy value of DIRECT
+Mar 07, 2018 11:03:16 AM sun.net.www.protocol.https.HttpsClient <init>
+FINEST: Creating new HttpsClient with url:https://www.amazon.com/SQL-Queries-Mere-Mortals-Hands/dp/0134858336/ref=sr_1_18/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-18&amp;keywords=sql and proxy:DIRECT with connect timeout:-1
+Mar 07, 2018 11:03:16 AM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+FINEST: ProxySelector Request for https://www.amazon.com/Head-First-SQL-Brain-Learners/dp/0596526849/ref=sr_1_19/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-19&amp;keywords=sql
+Mar 07, 2018 11:03:16 AM sun.net.www.protocol.https.HttpsClient New
+FINEST: Looking for HttpClient for URL https://www.amazon.com/Head-First-SQL-Brain-Learners/dp/0596526849/ref=sr_1_19/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-19&amp;keywords=sql and proxy value of DIRECT
+Mar 07, 2018 11:03:16 AM sun.net.www.protocol.https.HttpsClient <init>
+FINEST: Creating new HttpsClient with url:https://www.amazon.com/Head-First-SQL-Brain-Learners/dp/0596526849/ref=sr_1_19/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-19&amp;keywords=sql and proxy:DIRECT with connect timeout:-1
+Mar 07, 2018 11:03:16 AM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+FINEST: ProxySelector Request for https://www.amazon.com/T-SQL-Fundamentals-3rd-Itzik-Ben-Gan/dp/150930200X/ref=sr_1_20/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-20&amp;keywords=sql
+Mar 07, 2018 11:03:16 AM sun.net.www.protocol.https.HttpsClient New
+FINEST: Looking for HttpClient for URL https://www.amazon.com/T-SQL-Fundamentals-3rd-Itzik-Ben-Gan/dp/150930200X/ref=sr_1_20/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-20&amp;keywords=sql and proxy value of DIRECT
+Mar 07, 2018 11:03:16 AM sun.net.www.protocol.https.HttpsClient <init>
+FINEST: Creating new HttpsClient with url:https://www.amazon.com/T-SQL-Fundamentals-3rd-Itzik-Ben-Gan/dp/150930200X/ref=sr_1_20/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-20&amp;keywords=sql and proxy:DIRECT with connect timeout:-1
+Mar 07, 2018 11:03:16 AM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+FINEST: ProxySelector Request for https://www.amazon.com/SQL-Database-Programming-Chris-Fehily/dp/1937842312/ref=sr_1_19/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-19&amp;keywords=sql
+Mar 07, 2018 11:03:16 AM sun.net.www.protocol.https.HttpsClient New
+FINEST: Looking for HttpClient for URL https://www.amazon.com/SQL-Database-Programming-Chris-Fehily/dp/1937842312/ref=sr_1_19/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-19&amp;keywords=sql and proxy value of DIRECT
+Mar 07, 2018 11:03:16 AM sun.net.www.protocol.https.HttpsClient <init>
+FINEST: Creating new HttpsClient with url:https://www.amazon.com/SQL-Database-Programming-Chris-Fehily/dp/1937842312/ref=sr_1_19/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-19&amp;keywords=sql and proxy:DIRECT with connect timeout:-1
+Mar 07, 2018 11:03:16 AM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+FINEST: Proxy used: DIRECT
+Mar 07, 2018 11:03:16 AM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+FINEST: ProxySelector Request for https://www.amazon.com/Murachs-SQL-Server-2016-Developers/dp/1890774960/ref=sr_1_20/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-20&amp;keywords=sql
+Mar 07, 2018 11:03:16 AM sun.net.www.protocol.https.HttpsClient New
+FINEST: Looking for HttpClient for URL https://www.amazon.com/Murachs-SQL-Server-2016-Developers/dp/1890774960/ref=sr_1_20/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-20&amp;keywords=sql and proxy value of DIRECT
+Mar 07, 2018 11:03:16 AM sun.net.www.protocol.https.HttpsClient <init>
+FINEST: Creating new HttpsClient with url:https://www.amazon.com/Murachs-SQL-Server-2016-Developers/dp/1890774960/ref=sr_1_20/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-20&amp;keywords=sql and proxy:DIRECT with connect timeout:-1
+Mar 07, 2018 11:03:16 AM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+FINEST: Proxy used: DIRECT
+Mar 07, 2018 11:03:16 AM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+FINEST: Proxy used: DIRECT
+Mar 07, 2018 11:03:16 AM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+FINEST: Proxy used: DIRECT
+Mar 07, 2018 11:03:16 AM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+FINEST: Proxy used: DIRECT
+Mar 07, 2018 11:03:16 AM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+FINEST: Proxy used: DIRECT
+Mar 07, 2018 11:03:16 AM sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@75905bad5 pairs: {GET /SQL-Programming-Management-Step-Step/dp/1539916057/ref=sr_1_17/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-17&amp;keywords=sql HTTP/1.1: null}{User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36 OPR/50.0.2762.67}{Host: www.amazon.com}{Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2}{Connection: keep-alive}
+Mar 07, 2018 11:03:16 AM sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@2d528b395 pairs: {GET /SQL-Queries-Mere-Mortals-Hands/dp/0134858336/ref=sr_1_18/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-18&amp;keywords=sql HTTP/1.1: null}{User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36 OPR/50.0.2762.67}{Host: www.amazon.com}{Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2}{Connection: keep-alive}
+Mar 07, 2018 11:03:16 AM sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@3156b0b75 pairs: {GET /Head-First-SQL-Brain-Learners/dp/0596526849/ref=sr_1_19/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-19&amp;keywords=sql HTTP/1.1: null}{User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36 OPR/50.0.2762.67}{Host: www.amazon.com}{Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2}{Connection: keep-alive}
+Mar 07, 2018 11:03:16 AM sun.net.www.protocol.http.HttpURLConnection getInputStream0
+FINE: sun.net.www.MessageHeader@bf611db16 pairs: {null: HTTP/1.1 200 OK}{Server: Server}{Content-Type: text/html;charset=UTF-8}{Strict-Transport-Security: max-age=47474747; includeSubDomains; preload}{P3P: policyref="https://www.amazon.com/w3c/p3p.xml",CP="CAO DSP LAW CUR ADM IVAo IVDo CONo OTPo OUR DELi PUBi OTRi BUS PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA HEA PRE LOC GOV OTC "}{X-Frame-Options: SAMEORIGIN}{Cache-Control: no-cache}{Pragma: no-cache}{Expires: -1}{Vary: user-agent}{Date: Wed, 07 Mar 2018 10:03:17 GMT}{Transfer-Encoding: chunked}{Connection: keep-alive}{Connection: Transfer-Encoding}{Set-Cookie: session-id=140-1546384-0420752; Domain=.amazon.com; Expires=Tue, 01-Jan-2036 08:00:01 GMT; Path=/}{Set-Cookie: session-id-time=2082787201l; Domain=.amazon.com; Expires=Tue, 01-Jan-2036 08:00:01 GMT; Path=/}
+Mar 07, 2018 11:03:16 AM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+FINEST: ProxySelector Request for https://www.amazon.com/SQL-Ultimate-Beginners-Guide-Learn/dp/1533604568/ref=sr_1_21/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-21&amp;keywords=sql
+Mar 07, 2018 11:03:16 AM sun.net.www.protocol.https.HttpsClient New
+FINEST: Looking for HttpClient for URL https://www.amazon.com/SQL-Ultimate-Beginners-Guide-Learn/dp/1533604568/ref=sr_1_21/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-21&amp;keywords=sql and proxy value of DIRECT
+Mar 07, 2018 11:03:16 AM sun.net.www.protocol.https.HttpsClient <init>
+FINEST: Creating new HttpsClient with url:https://www.amazon.com/SQL-Ultimate-Beginners-Guide-Learn/dp/1533604568/ref=sr_1_21/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-21&amp;keywords=sql and proxy:DIRECT with connect timeout:-1
+Mar 07, 2018 11:03:16 AM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+FINEST: ProxySelector Request for https://www.amazon.com/Guide-SQL-Philip-J-Pratt/dp/111152727X/ref=sr_1_22/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-22&amp;keywords=sql
+Mar 07, 2018 11:03:16 AM sun.net.www.protocol.https.HttpsClient New
+FINEST: Looking for HttpClient for URL https://www.amazon.com/Guide-SQL-Philip-J-Pratt/dp/111152727X/ref=sr_1_22/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-22&amp;keywords=sql and proxy value of DIRECT
+Mar 07, 2018 11:03:16 AM sun.net.www.protocol.https.HttpsClient <init>
+FINEST: Creating new HttpsClient with url:https://www.amazon.com/Guide-SQL-Philip-J-Pratt/dp/111152727X/ref=sr_1_22/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-22&amp;keywords=sql and proxy:DIRECT with connect timeout:-1
+Mar 07, 2018 11:03:16 AM sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@6f98d1b5 pairs: {GET /T-SQL-Fundamentals-3rd-Itzik-Ben-Gan/dp/150930200X/ref=sr_1_20/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-20&amp;keywords=sql HTTP/1.1: null}{User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36 OPR/50.0.2762.67}{Host: www.amazon.com}{Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2}{Connection: keep-alive}
+Mar 07, 2018 11:03:16 AM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+FINEST: ProxySelector Request for https://www.amazon.com/SQL-Visual-QuickStart-Guide-3rd/dp/0321553578/ref=sr_1_23/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-23&amp;keywords=sql
+Mar 07, 2018 11:03:16 AM sun.net.www.protocol.https.HttpsClient New
+FINEST: Looking for HttpClient for URL https://www.amazon.com/SQL-Visual-QuickStart-Guide-3rd/dp/0321553578/ref=sr_1_23/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-23&amp;keywords=sql and proxy value of DIRECT
+Mar 07, 2018 11:03:16 AM sun.net.www.protocol.https.HttpsClient <init>
+FINEST: Creating new HttpsClient with url:https://www.amazon.com/SQL-Visual-QuickStart-Guide-3rd/dp/0321553578/ref=sr_1_23/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-23&amp;keywords=sql and proxy:DIRECT with connect timeout:-1
+Mar 07, 2018 11:03:16 AM sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@351028bc5 pairs: {GET /SQL-Database-Programming-Chris-Fehily/dp/1937842312/ref=sr_1_19/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-19&amp;keywords=sql HTTP/1.1: null}{User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36 OPR/50.0.2762.67}{Host: www.amazon.com}{Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2}{Connection: keep-alive}
+Mar 07, 2018 11:03:16 AM sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@4c20b4495 pairs: {GET /Murachs-SQL-Server-2016-Developers/dp/1890774960/ref=sr_1_20/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-20&amp;keywords=sql HTTP/1.1: null}{User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36 OPR/50.0.2762.67}{Host: www.amazon.com}{Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2}{Connection: keep-alive}
+Mar 07, 2018 11:03:16 AM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+FINEST: Proxy used: DIRECT
+Mar 07, 2018 11:03:16 AM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+FINEST: Proxy used: DIRECT
+Mar 07, 2018 11:03:16 AM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+FINEST: Proxy used: DIRECT
+Mar 07, 2018 11:03:17 AM sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@5429ebd15 pairs: {GET /SQL-Ultimate-Beginners-Guide-Learn/dp/1533604568/ref=sr_1_21/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-21&amp;keywords=sql HTTP/1.1: null}{User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36 OPR/50.0.2762.67}{Host: www.amazon.com}{Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2}{Connection: keep-alive}
+Mar 07, 2018 11:03:17 AM sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@55bbedfd5 pairs: {GET /Guide-SQL-Philip-J-Pratt/dp/111152727X/ref=sr_1_22/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-22&amp;keywords=sql HTTP/1.1: null}{User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36 OPR/50.0.2762.67}{Host: www.amazon.com}{Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2}{Connection: keep-alive}
+Mar 07, 2018 11:03:17 AM sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@4cc693575 pairs: {GET /SQL-Visual-QuickStart-Guide-3rd/dp/0321553578/ref=sr_1_23/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-23&amp;keywords=sql HTTP/1.1: null}{User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36 OPR/50.0.2762.67}{Host: www.amazon.com}{Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2}{Connection: keep-alive}
+Mar 07, 2018 11:03:17 AM sun.net.www.protocol.http.HttpURLConnection getInputStream0
+FINE: sun.net.www.MessageHeader@176a75bc16 pairs: {null: HTTP/1.1 200 OK}{Server: Server}{Content-Type: text/html;charset=UTF-8}{Strict-Transport-Security: max-age=47474747; includeSubDomains; preload}{P3P: policyref="https://www.amazon.com/w3c/p3p.xml",CP="CAO DSP LAW CUR ADM IVAo IVDo CONo OTPo OUR DELi PUBi OTRi BUS PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA HEA PRE LOC GOV OTC "}{X-Frame-Options: SAMEORIGIN}{Cache-Control: no-cache}{Pragma: no-cache}{Expires: -1}{Vary: user-agent}{Date: Wed, 07 Mar 2018 10:03:17 GMT}{Transfer-Encoding: chunked}{Connection: keep-alive}{Connection: Transfer-Encoding}{Set-Cookie: session-id=140-1546384-0420752; Domain=.amazon.com; Expires=Tue, 01-Jan-2036 08:00:01 GMT; Path=/}{Set-Cookie: session-id-time=2082787201l; Domain=.amazon.com; Expires=Tue, 01-Jan-2036 08:00:01 GMT; Path=/}
+Mar 07, 2018 11:03:17 AM sun.net.www.protocol.http.HttpURLConnection getInputStream0
+FINE: sun.net.www.MessageHeader@5e13838d16 pairs: {null: HTTP/1.1 200 OK}{Server: Server}{Content-Type: text/html;charset=UTF-8}{Strict-Transport-Security: max-age=47474747; includeSubDomains; preload}{P3P: policyref="https://www.amazon.com/w3c/p3p.xml",CP="CAO DSP LAW CUR ADM IVAo IVDo CONo OTPo OUR DELi PUBi OTRi BUS PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA HEA PRE LOC GOV OTC "}{X-Frame-Options: SAMEORIGIN}{Cache-Control: no-cache}{Pragma: no-cache}{Expires: -1}{Vary: user-agent}{Date: Wed, 07 Mar 2018 10:03:17 GMT}{Transfer-Encoding: chunked}{Connection: keep-alive}{Connection: Transfer-Encoding}{Set-Cookie: session-id=140-1546384-0420752; Domain=.amazon.com; Expires=Tue, 01-Jan-2036 08:00:01 GMT; Path=/}{Set-Cookie: session-id-time=2082787201l; Domain=.amazon.com; Expires=Tue, 01-Jan-2036 08:00:01 GMT; Path=/}
+Mar 07, 2018 11:03:17 AM sun.net.www.protocol.http.HttpURLConnection getInputStream0
+FINE: sun.net.www.MessageHeader@76382b0916 pairs: {null: HTTP/1.1 200 OK}{Server: Server}{Content-Type: text/html;charset=UTF-8}{Strict-Transport-Security: max-age=47474747; includeSubDomains; preload}{P3P: policyref="https://www.amazon.com/w3c/p3p.xml",CP="CAO DSP LAW CUR ADM IVAo IVDo CONo OTPo OUR DELi PUBi OTRi BUS PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA HEA PRE LOC GOV OTC "}{X-Frame-Options: SAMEORIGIN}{Cache-Control: no-cache}{Pragma: no-cache}{Expires: -1}{Vary: user-agent}{Date: Wed, 07 Mar 2018 10:03:17 GMT}{Transfer-Encoding: chunked}{Connection: keep-alive}{Connection: Transfer-Encoding}{Set-Cookie: session-id=140-1546384-0420752; Domain=.amazon.com; Expires=Tue, 01-Jan-2036 08:00:01 GMT; Path=/}{Set-Cookie: session-id-time=2082787201l; Domain=.amazon.com; Expires=Tue, 01-Jan-2036 08:00:01 GMT; Path=/}
+Mar 07, 2018 11:03:17 AM sun.net.www.protocol.http.HttpURLConnection getInputStream0
+FINE: sun.net.www.MessageHeader@4eff452e16 pairs: {null: HTTP/1.1 200 OK}{Server: Server}{Content-Type: text/html;charset=UTF-8}{Strict-Transport-Security: max-age=47474747; includeSubDomains; preload}{P3P: policyref="https://www.amazon.com/w3c/p3p.xml",CP="CAO DSP LAW CUR ADM IVAo IVDo CONo OTPo OUR DELi PUBi OTRi BUS PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA HEA PRE LOC GOV OTC "}{X-Frame-Options: SAMEORIGIN}{Cache-Control: no-cache}{Pragma: no-cache}{Expires: -1}{Vary: user-agent}{Date: Wed, 07 Mar 2018 10:03:17 GMT}{Transfer-Encoding: chunked}{Connection: keep-alive}{Connection: Transfer-Encoding}{Set-Cookie: session-id=140-1546384-0420752; Domain=.amazon.com; Expires=Tue, 01-Jan-2036 08:00:01 GMT; Path=/}{Set-Cookie: session-id-time=2082787201l; Domain=.amazon.com; Expires=Tue, 01-Jan-2036 08:00:01 GMT; Path=/}
+Mar 07, 2018 11:03:17 AM sun.net.www.protocol.http.HttpURLConnection getInputStream0
+FINE: sun.net.www.MessageHeader@42f4a54016 pairs: {null: HTTP/1.1 200 OK}{Server: Server}{Content-Type: text/html;charset=UTF-8}{Strict-Transport-Security: max-age=47474747; includeSubDomains; preload}{P3P: policyref="https://www.amazon.com/w3c/p3p.xml",CP="CAO DSP LAW CUR ADM IVAo IVDo CONo OTPo OUR DELi PUBi OTRi BUS PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA HEA PRE LOC GOV OTC "}{X-Frame-Options: SAMEORIGIN}{Cache-Control: no-cache}{Pragma: no-cache}{Expires: -1}{Vary: user-agent}{Date: Wed, 07 Mar 2018 10:03:17 GMT}{Transfer-Encoding: chunked}{Connection: keep-alive}{Connection: Transfer-Encoding}{Set-Cookie: session-id=140-1546384-0420752; Domain=.amazon.com; Expires=Tue, 01-Jan-2036 08:00:01 GMT; Path=/}{Set-Cookie: session-id-time=2082787201l; Domain=.amazon.com; Expires=Tue, 01-Jan-2036 08:00:01 GMT; Path=/}
+Mar 07, 2018 11:03:17 AM sun.net.www.protocol.http.HttpURLConnection getInputStream0
+FINE: sun.net.www.MessageHeader@6cf2691a16 pairs: {null: HTTP/1.1 200 OK}{Server: Server}{Content-Type: text/html;charset=UTF-8}{Strict-Transport-Security: max-age=47474747; includeSubDomains; preload}{P3P: policyref="https://www.amazon.com/w3c/p3p.xml",CP="CAO DSP LAW CUR ADM IVAo IVDo CONo OTPo OUR DELi PUBi OTRi BUS PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA HEA PRE LOC GOV OTC "}{X-Frame-Options: SAMEORIGIN}{Cache-Control: no-cache}{Pragma: no-cache}{Expires: -1}{Vary: user-agent}{Date: Wed, 07 Mar 2018 10:03:17 GMT}{Transfer-Encoding: chunked}{Connection: keep-alive}{Connection: Transfer-Encoding}{Set-Cookie: session-id=140-1546384-0420752; Domain=.amazon.com; Expires=Tue, 01-Jan-2036 08:00:01 GMT; Path=/}{Set-Cookie: session-id-time=2082787201l; Domain=.amazon.com; Expires=Tue, 01-Jan-2036 08:00:01 GMT; Path=/}
+Mar 07, 2018 11:03:17 AM sun.net.www.protocol.http.HttpURLConnection getInputStream0
+FINE: sun.net.www.MessageHeader@2ebc36e616 pairs: {null: HTTP/1.1 200 OK}{Server: Server}{Content-Type: text/html;charset=UTF-8}{Strict-Transport-Security: max-age=47474747; includeSubDomains; preload}{P3P: policyref="https://www.amazon.com/w3c/p3p.xml",CP="CAO DSP LAW CUR ADM IVAo IVDo CONo OTPo OUR DELi PUBi OTRi BUS PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA HEA PRE LOC GOV OTC "}{X-Frame-Options: SAMEORIGIN}{Cache-Control: no-cache}{Pragma: no-cache}{Expires: -1}{Vary: user-agent}{Date: Wed, 07 Mar 2018 10:03:17 GMT}{Transfer-Encoding: chunked}{Connection: keep-alive}{Connection: Transfer-Encoding}{Set-Cookie: session-id=140-1546384-0420752; Domain=.amazon.com; Expires=Tue, 01-Jan-2036 08:00:01 GMT; Path=/}{Set-Cookie: session-id-time=2082787201l; Domain=.amazon.com; Expires=Tue, 01-Jan-2036 08:00:01 GMT; Path=/}
+Mar 07, 2018 11:03:17 AM sun.net.www.protocol.http.HttpURLConnection getInputStream0
+FINE: sun.net.www.MessageHeader@5b2991c616 pairs: {null: HTTP/1.1 200 OK}{Server: Server}{Content-Type: text/html;charset=UTF-8}{Strict-Transport-Security: max-age=47474747; includeSubDomains; preload}{P3P: policyref="https://www.amazon.com/w3c/p3p.xml",CP="CAO DSP LAW CUR ADM IVAo IVDo CONo OTPo OUR DELi PUBi OTRi BUS PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA HEA PRE LOC GOV OTC "}{X-Frame-Options: SAMEORIGIN}{Cache-Control: no-cache}{Pragma: no-cache}{Expires: -1}{Vary: user-agent}{Date: Wed, 07 Mar 2018 10:03:17 GMT}{Transfer-Encoding: chunked}{Connection: keep-alive}{Connection: Transfer-Encoding}{Set-Cookie: session-id=140-1546384-0420752; Domain=.amazon.com; Expires=Tue, 01-Jan-2036 08:00:01 GMT; Path=/}{Set-Cookie: session-id-time=2082787201l; Domain=.amazon.com; Expires=Tue, 01-Jan-2036 08:00:01 GMT; Path=/}
+Mar 07, 2018 11:03:17 AM sun.net.www.protocol.http.HttpURLConnection getInputStream0
+FINE: sun.net.www.MessageHeader@6b9fc5d416 pairs: {null: HTTP/1.1 200 OK}{Server: Server}{Content-Type: text/html;charset=UTF-8}{Strict-Transport-Security: max-age=47474747; includeSubDomains; preload}{P3P: policyref="https://www.amazon.com/w3c/p3p.xml",CP="CAO DSP LAW CUR ADM IVAo IVDo CONo OTPo OUR DELi PUBi OTRi BUS PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA HEA PRE LOC GOV OTC "}{X-Frame-Options: SAMEORIGIN}{Cache-Control: no-cache}{Pragma: no-cache}{Expires: -1}{Vary: user-agent}{Date: Wed, 07 Mar 2018 10:03:17 GMT}{Transfer-Encoding: chunked}{Connection: keep-alive}{Connection: Transfer-Encoding}{Set-Cookie: session-id=140-1546384-0420752; Domain=.amazon.com; Expires=Tue, 01-Jan-2036 08:00:01 GMT; Path=/}{Set-Cookie: session-id-time=2082787201l; Domain=.amazon.com; Expires=Tue, 01-Jan-2036 08:00:01 GMT; Path=/}
+Mar 07, 2018 11:03:18 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask download
+FINER: Task is cancelled
+Mar 07, 2018 11:03:18 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask download
+FINER: Task is cancelled
+Mar 07, 2018 11:03:18 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask download
+FINER: Task is cancelled
+Mar 07, 2018 11:03:18 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask download
+FINER: Task is cancelled
+Mar 07, 2018 11:03:18 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask download
+FINER: Task is cancelled
+Mar 07, 2018 11:03:18 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask download
+FINER: Task is cancelled
+Mar 07, 2018 11:03:18 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask download
+FINER: Task is cancelled
+Mar 07, 2018 11:03:18 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask download
+FINER: Task is cancelled
+Mar 07, 2018 11:03:18 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask download
+FINER: Task is cancelled
+Mar 07, 2018 11:03:18 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask download
+FINER: Task is cancelled
+Mar 07, 2018 11:03:18 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask download
+FINER: Task is cancelled
+Mar 07, 2018 11:03:18 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask download
+FINER: Task is cancelled
+Mar 07, 2018 11:03:18 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask download
+FINER: Task is cancelled
+Mar 07, 2018 11:03:18 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask download
+FINER: Task is cancelled
+Mar 07, 2018 11:03:18 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask download
+FINER: Task is cancelled
+Mar 07, 2018 11:03:18 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask download
+FINER: Task is cancelled
+Mar 07, 2018 11:03:18 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask download
+FINER: Task is cancelled
+Mar 07, 2018 11:03:18 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask run
+FINE: Multithread web page download	--START
+Mar 07, 2018 11:03:18 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask run
+FINER: <> Amount of links to download: 7
+Mar 07, 2018 11:03:19 AM com.stefanski.amazonbooksearcher.util.IOUtil write
+FINER: Writing file...
+Mar 07, 2018 11:03:19 AM com.stefanski.amazonbooksearcher.util.IOUtil write
+FINER: Writing file...
+Mar 07, 2018 11:03:19 AM com.stefanski.amazonbooksearcher.util.IOUtil write
+FINER: --DONE!
+Mar 07, 2018 11:03:19 AM com.stefanski.amazonbooksearcher.util.IOUtil write
+FINER: --DONE!
+Mar 07, 2018 11:03:19 AM com.stefanski.amazonbooksearcher.util.IOUtil write
+FINER: Writing file...
+Mar 07, 2018 11:03:19 AM com.stefanski.amazonbooksearcher.util.IOUtil write
+FINER: Writing file...
+Mar 07, 2018 11:03:19 AM com.stefanski.amazonbooksearcher.util.IOUtil write
+FINER: --DONE!
+Mar 07, 2018 11:03:19 AM com.stefanski.amazonbooksearcher.util.IOUtil write
+FINER: --DONE!
+Mar 07, 2018 11:03:20 AM com.stefanski.amazonbooksearcher.util.IOUtil write
+FINER: Writing file...
+Mar 07, 2018 11:03:20 AM com.stefanski.amazonbooksearcher.util.IOUtil write
+FINER: --DONE!
+Mar 07, 2018 11:03:20 AM com.stefanski.amazonbooksearcher.util.IOUtil write
+FINER: Writing file...
+Mar 07, 2018 11:03:20 AM com.stefanski.amazonbooksearcher.util.IOUtil write
+FINER: --DONE!
+Mar 07, 2018 11:03:20 AM com.stefanski.amazonbooksearcher.util.IOUtil write
+FINER: Writing file...
+Mar 07, 2018 11:03:20 AM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+FINEST: ProxySelector Request for https://www.amazon.com/SQL-Programming-Beginners-Step-Step/dp/1540323447/ref=sr_1_24/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-24&amp;keywords=sql
+Mar 07, 2018 11:03:20 AM sun.net.www.protocol.https.HttpsClient New
+FINEST: Looking for HttpClient for URL https://www.amazon.com/SQL-Programming-Beginners-Step-Step/dp/1540323447/ref=sr_1_24/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-24&amp;keywords=sql and proxy value of DIRECT
+Mar 07, 2018 11:03:20 AM sun.net.www.protocol.https.HttpsClient <init>
+FINEST: Creating new HttpsClient with url:https://www.amazon.com/SQL-Programming-Beginners-Step-Step/dp/1540323447/ref=sr_1_24/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-24&amp;keywords=sql and proxy:DIRECT with connect timeout:-1
+Mar 07, 2018 11:03:20 AM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+FINEST: ProxySelector Request for https://www.amazon.com/Training-70-461-Querying-Microsoft-Server/dp/0735666059/ref=sr_1_25/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-25&amp;keywords=sql
+Mar 07, 2018 11:03:20 AM sun.net.www.protocol.https.HttpsClient New
+FINEST: Looking for HttpClient for URL https://www.amazon.com/Training-70-461-Querying-Microsoft-Server/dp/0735666059/ref=sr_1_25/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-25&amp;keywords=sql and proxy value of DIRECT
+Mar 07, 2018 11:03:20 AM sun.net.www.protocol.https.HttpsClient <init>
+FINEST: Creating new HttpsClient with url:https://www.amazon.com/Training-70-461-Querying-Microsoft-Server/dp/0735666059/ref=sr_1_25/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-25&amp;keywords=sql and proxy:DIRECT with connect timeout:-1
+Mar 07, 2018 11:03:20 AM com.stefanski.amazonbooksearcher.util.IOUtil write
+FINER: Writing file...
+Mar 07, 2018 11:03:20 AM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+FINEST: Proxy used: DIRECT
+Mar 07, 2018 11:03:20 AM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+FINEST: Proxy used: DIRECT
+Mar 07, 2018 11:03:20 AM com.stefanski.amazonbooksearcher.util.IOUtil write
+FINER: Writing file...
+Mar 07, 2018 11:03:20 AM com.stefanski.amazonbooksearcher.util.IOUtil write
+FINER: --DONE!
+Mar 07, 2018 11:03:20 AM com.stefanski.amazonbooksearcher.util.IOUtil write
+FINER: Writing file...
+Mar 07, 2018 11:03:20 AM com.stefanski.amazonbooksearcher.util.IOUtil write
+FINER: --DONE!
+Mar 07, 2018 11:03:20 AM sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@f1952455 pairs: {GET /SQL-Programming-Beginners-Step-Step/dp/1540323447/ref=sr_1_24/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-24&amp;keywords=sql HTTP/1.1: null}{User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36 OPR/50.0.2762.67}{Host: www.amazon.com}{Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2}{Connection: keep-alive}
+Mar 07, 2018 11:03:20 AM sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@5aa935de5 pairs: {GET /Training-70-461-Querying-Microsoft-Server/dp/0735666059/ref=sr_1_25/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-25&amp;keywords=sql HTTP/1.1: null}{User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36 OPR/50.0.2762.67}{Host: www.amazon.com}{Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2}{Connection: keep-alive}
+Mar 07, 2018 11:03:20 AM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+FINEST: ProxySelector Request for https://www.amazon.com/SQL-Relational-Theory-Write-Accurate/dp/1491941170/ref=sr_1_26/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-26&amp;keywords=sql
+Mar 07, 2018 11:03:20 AM sun.net.www.protocol.https.HttpsClient New
+FINEST: Looking for HttpClient for URL https://www.amazon.com/SQL-Relational-Theory-Write-Accurate/dp/1491941170/ref=sr_1_26/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-26&amp;keywords=sql and proxy value of DIRECT
+Mar 07, 2018 11:03:20 AM sun.net.www.protocol.https.HttpsClient <init>
+FINEST: Creating new HttpsClient with url:https://www.amazon.com/SQL-Relational-Theory-Write-Accurate/dp/1491941170/ref=sr_1_26/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-26&amp;keywords=sql and proxy:DIRECT with connect timeout:-1
+Mar 07, 2018 11:03:20 AM com.stefanski.amazonbooksearcher.util.IOUtil write
+FINER: --DONE!
+Mar 07, 2018 11:03:20 AM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+FINEST: ProxySelector Request for https://www.amazon.com/Sql-Comprehensive-Beginners-Practical-Examples/dp/154824256X/ref=sr_1_27/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-27&amp;keywords=sql
+Mar 07, 2018 11:03:20 AM sun.net.www.protocol.https.HttpsClient New
+FINEST: Looking for HttpClient for URL https://www.amazon.com/Sql-Comprehensive-Beginners-Practical-Examples/dp/154824256X/ref=sr_1_27/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-27&amp;keywords=sql and proxy value of DIRECT
+Mar 07, 2018 11:03:20 AM sun.net.www.protocol.https.HttpsClient <init>
+FINEST: Creating new HttpsClient with url:https://www.amazon.com/Sql-Comprehensive-Beginners-Practical-Examples/dp/154824256X/ref=sr_1_27/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-27&amp;keywords=sql and proxy:DIRECT with connect timeout:-1
+Mar 07, 2018 11:03:20 AM com.stefanski.amazonbooksearcher.util.IOUtil write
+FINER: --DONE!
+Mar 07, 2018 11:03:20 AM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+FINEST: ProxySelector Request for https://www.amazon.com/Real-SQL-Queries-50-Challenges-ebook/dp/B078BPS969/ref=sr_1_28/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-28&amp;keywords=sql
+Mar 07, 2018 11:03:20 AM sun.net.www.protocol.https.HttpsClient New
+FINEST: Looking for HttpClient for URL https://www.amazon.com/Real-SQL-Queries-50-Challenges-ebook/dp/B078BPS969/ref=sr_1_28/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-28&amp;keywords=sql and proxy value of DIRECT
+Mar 07, 2018 11:03:20 AM sun.net.www.protocol.https.HttpsClient <init>
+FINEST: Creating new HttpsClient with url:https://www.amazon.com/Real-SQL-Queries-50-Challenges-ebook/dp/B078BPS969/ref=sr_1_28/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-28&amp;keywords=sql and proxy:DIRECT with connect timeout:-1
+Mar 07, 2018 11:03:20 AM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+FINEST: Proxy used: DIRECT
+Mar 07, 2018 11:03:20 AM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+FINEST: ProxySelector Request for https://www.amazon.com/Murachs-Oracle-SQL-Developers-2nd/dp/1890774804/ref=sr_1_29/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-29&amp;keywords=sql
+Mar 07, 2018 11:03:20 AM sun.net.www.protocol.https.HttpsClient New
+FINEST: Looking for HttpClient for URL https://www.amazon.com/Murachs-Oracle-SQL-Developers-2nd/dp/1890774804/ref=sr_1_29/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-29&amp;keywords=sql and proxy value of DIRECT
+Mar 07, 2018 11:03:20 AM sun.net.www.protocol.https.HttpsClient <init>
+FINEST: Creating new HttpsClient with url:https://www.amazon.com/Murachs-Oracle-SQL-Developers-2nd/dp/1890774804/ref=sr_1_29/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-29&amp;keywords=sql and proxy:DIRECT with connect timeout:-1
+Mar 07, 2018 11:03:20 AM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+FINEST: Proxy used: DIRECT
+Mar 07, 2018 11:03:20 AM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+FINEST: Proxy used: DIRECT
+Mar 07, 2018 11:03:20 AM sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@3dca490c5 pairs: {GET /SQL-Relational-Theory-Write-Accurate/dp/1491941170/ref=sr_1_26/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-26&amp;keywords=sql HTTP/1.1: null}{User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36 OPR/50.0.2762.67}{Host: www.amazon.com}{Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2}{Connection: keep-alive}
+Mar 07, 2018 11:03:20 AM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+FINEST: Proxy used: DIRECT
+Mar 07, 2018 11:03:20 AM sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@1fe560325 pairs: {GET /Sql-Comprehensive-Beginners-Practical-Examples/dp/154824256X/ref=sr_1_27/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-27&amp;keywords=sql HTTP/1.1: null}{User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36 OPR/50.0.2762.67}{Host: www.amazon.com}{Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2}{Connection: keep-alive}
+Mar 07, 2018 11:03:20 AM sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@3fd7de445 pairs: {GET /Real-SQL-Queries-50-Challenges-ebook/dp/B078BPS969/ref=sr_1_28/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-28&amp;keywords=sql HTTP/1.1: null}{User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36 OPR/50.0.2762.67}{Host: www.amazon.com}{Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2}{Connection: keep-alive}
+Mar 07, 2018 11:03:20 AM sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@7f4650755 pairs: {GET /Murachs-Oracle-SQL-Developers-2nd/dp/1890774804/ref=sr_1_29/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-29&amp;keywords=sql HTTP/1.1: null}{User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36 OPR/50.0.2762.67}{Host: www.amazon.com}{Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2}{Connection: keep-alive}
+Mar 07, 2018 11:03:20 AM sun.net.www.protocol.http.HttpURLConnection getInputStream0
+FINE: sun.net.www.MessageHeader@362b0bdc16 pairs: {null: HTTP/1.1 200 OK}{Server: Server}{Content-Type: text/html;charset=UTF-8}{Strict-Transport-Security: max-age=47474747; includeSubDomains; preload}{P3P: policyref="https://www.amazon.com/w3c/p3p.xml",CP="CAO DSP LAW CUR ADM IVAo IVDo CONo OTPo OUR DELi PUBi OTRi BUS PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA HEA PRE LOC GOV OTC "}{X-Frame-Options: SAMEORIGIN}{Cache-Control: no-cache}{Pragma: no-cache}{Expires: -1}{Vary: user-agent}{Date: Wed, 07 Mar 2018 10:03:21 GMT}{Transfer-Encoding: chunked}{Connection: keep-alive}{Connection: Transfer-Encoding}{Set-Cookie: session-id=140-1546384-0420752; Domain=.amazon.com; Expires=Tue, 01-Jan-2036 08:00:01 GMT; Path=/}{Set-Cookie: session-id-time=2082787201l; Domain=.amazon.com; Expires=Tue, 01-Jan-2036 08:00:01 GMT; Path=/}
+Mar 07, 2018 11:03:20 AM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+FINEST: ProxySelector Request for https://www.amazon.com/T-SQL-Querying-Developer-Reference-Ben-Gan/dp/0735685045/ref=sr_1_30/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-30&amp;keywords=sql
+Mar 07, 2018 11:03:20 AM sun.net.www.protocol.https.HttpsClient New
+FINEST: Looking for HttpClient for URL https://www.amazon.com/T-SQL-Querying-Developer-Reference-Ben-Gan/dp/0735685045/ref=sr_1_30/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-30&amp;keywords=sql and proxy value of DIRECT
+Mar 07, 2018 11:03:20 AM sun.net.www.protocol.https.HttpsClient <init>
+FINEST: Creating new HttpsClient with url:https://www.amazon.com/T-SQL-Querying-Developer-Reference-Ben-Gan/dp/0735685045/ref=sr_1_30/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-30&amp;keywords=sql and proxy:DIRECT with connect timeout:-1
+Mar 07, 2018 11:03:20 AM sun.net.www.protocol.http.HttpURLConnection getInputStream0
+FINE: sun.net.www.MessageHeader@1dd2c86d16 pairs: {null: HTTP/1.1 200 OK}{Server: Server}{Content-Type: text/html;charset=UTF-8}{Strict-Transport-Security: max-age=47474747; includeSubDomains; preload}{P3P: policyref="https://www.amazon.com/w3c/p3p.xml",CP="CAO DSP LAW CUR ADM IVAo IVDo CONo OTPo OUR DELi PUBi OTRi BUS PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA HEA PRE LOC GOV OTC "}{X-Frame-Options: SAMEORIGIN}{Cache-Control: no-cache}{Pragma: no-cache}{Expires: -1}{Vary: user-agent}{Date: Wed, 07 Mar 2018 10:03:21 GMT}{Transfer-Encoding: chunked}{Connection: keep-alive}{Connection: Transfer-Encoding}{Set-Cookie: session-id=140-1546384-0420752; Domain=.amazon.com; Expires=Tue, 01-Jan-2036 08:00:01 GMT; Path=/}{Set-Cookie: session-id-time=2082787201l; Domain=.amazon.com; Expires=Tue, 01-Jan-2036 08:00:01 GMT; Path=/}
+Mar 07, 2018 11:03:21 AM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+FINEST: Proxy used: DIRECT
+Mar 07, 2018 11:03:21 AM sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@a2662195 pairs: {GET /T-SQL-Querying-Developer-Reference-Ben-Gan/dp/0735685045/ref=sr_1_30/140-1546384-0420752?ie=UTF8&amp;qid=1520416989&amp;sr=8-30&amp;keywords=sql HTTP/1.1: null}{User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36 OPR/50.0.2762.67}{Host: www.amazon.com}{Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2}{Connection: keep-alive}
+Mar 07, 2018 11:03:21 AM sun.net.www.protocol.http.HttpURLConnection getInputStream0
+FINE: sun.net.www.MessageHeader@92bc3c116 pairs: {null: HTTP/1.1 200 OK}{Server: Server}{Content-Type: text/html;charset=UTF-8}{Strict-Transport-Security: max-age=47474747; includeSubDomains; preload}{P3P: policyref="https://www.amazon.com/w3c/p3p.xml",CP="CAO DSP LAW CUR ADM IVAo IVDo CONo OTPo OUR DELi PUBi OTRi BUS PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA HEA PRE LOC GOV OTC "}{X-Frame-Options: SAMEORIGIN}{Cache-Control: no-cache}{Pragma: no-cache}{Expires: -1}{Vary: user-agent}{Date: Wed, 07 Mar 2018 10:03:21 GMT}{Transfer-Encoding: chunked}{Connection: keep-alive}{Connection: Transfer-Encoding}{Set-Cookie: session-id=140-1546384-0420752; Domain=.amazon.com; Expires=Tue, 01-Jan-2036 08:00:01 GMT; Path=/}{Set-Cookie: session-id-time=2082787201l; Domain=.amazon.com; Expires=Tue, 01-Jan-2036 08:00:01 GMT; Path=/}
+Mar 07, 2018 11:03:21 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask download
+FINER: Task is cancelled
+Mar 07, 2018 11:03:21 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask download
+FINER: Task is cancelled
+Mar 07, 2018 11:03:21 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask download
+FINER: Task is cancelled
+Mar 07, 2018 11:03:21 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask download
+FINER: Task is cancelled
+Mar 07, 2018 11:03:21 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask download
+FINER: Task is cancelled
+Mar 07, 2018 11:03:21 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask download
+FINER: Task is cancelled
+Mar 07, 2018 11:03:21 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask download
+FINER: Task is cancelled
+Mar 07, 2018 11:03:21 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask run
+FINE: Multithread web page download	--START
+Mar 07, 2018 11:03:21 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask run
+FINER: <> Amount of links to download: 0
+Mar 07, 2018 11:03:21 AM sun.net.www.protocol.http.HttpURLConnection getInputStream0
+FINE: sun.net.www.MessageHeader@562e0d7b16 pairs: {null: HTTP/1.1 200 OK}{Server: Server}{Content-Type: text/html;charset=UTF-8}{Strict-Transport-Security: max-age=47474747; includeSubDomains; preload}{P3P: policyref="https://www.amazon.com/w3c/p3p.xml",CP="CAO DSP LAW CUR ADM IVAo IVDo CONo OTPo OUR DELi PUBi OTRi BUS PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA HEA PRE LOC GOV OTC "}{X-Frame-Options: SAMEORIGIN}{Cache-Control: no-cache}{Pragma: no-cache}{Expires: -1}{Vary: user-agent}{Date: Wed, 07 Mar 2018 10:03:21 GMT}{Transfer-Encoding: chunked}{Connection: keep-alive}{Connection: Transfer-Encoding}{Set-Cookie: session-id=140-1546384-0420752; Domain=.amazon.com; Expires=Tue, 01-Jan-2036 08:00:01 GMT; Path=/}{Set-Cookie: session-id-time=2082787201l; Domain=.amazon.com; Expires=Tue, 01-Jan-2036 08:00:01 GMT; Path=/}
+Mar 07, 2018 11:03:21 AM sun.net.www.protocol.http.HttpURLConnection getInputStream0
+FINE: sun.net.www.MessageHeader@48eda72016 pairs: {null: HTTP/1.1 200 OK}{Server: Server}{Content-Type: text/html;charset=UTF-8}{Strict-Transport-Security: max-age=47474747; includeSubDomains; preload}{P3P: policyref="https://www.amazon.com/w3c/p3p.xml",CP="CAO DSP LAW CUR ADM IVAo IVDo CONo OTPo OUR DELi PUBi OTRi BUS PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA HEA PRE LOC GOV OTC "}{X-Frame-Options: SAMEORIGIN}{Cache-Control: no-cache}{Pragma: no-cache}{Expires: -1}{Vary: user-agent}{Date: Wed, 07 Mar 2018 10:03:21 GMT}{Transfer-Encoding: chunked}{Connection: keep-alive}{Connection: Transfer-Encoding}{Set-Cookie: session-id=140-1546384-0420752; Domain=.amazon.com; Expires=Tue, 01-Jan-2036 08:00:01 GMT; Path=/}{Set-Cookie: session-id-time=2082787201l; Domain=.amazon.com; Expires=Tue, 01-Jan-2036 08:00:01 GMT; Path=/}
+Mar 07, 2018 11:03:21 AM sun.net.www.protocol.http.HttpURLConnection getInputStream0
+FINE: sun.net.www.MessageHeader@75188e6516 pairs: {null: HTTP/1.1 200 OK}{Server: Server}{Content-Type: text/html;charset=UTF-8}{Strict-Transport-Security: max-age=47474747; includeSubDomains; preload}{P3P: policyref="https://www.amazon.com/w3c/p3p.xml",CP="CAO DSP LAW CUR ADM IVAo IVDo CONo OTPo OUR DELi PUBi OTRi BUS PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA HEA PRE LOC GOV OTC "}{X-Frame-Options: SAMEORIGIN}{Cache-Control: no-cache}{Pragma: no-cache}{Expires: -1}{Vary: user-agent}{Date: Wed, 07 Mar 2018 10:03:21 GMT}{Transfer-Encoding: chunked}{Connection: keep-alive}{Connection: Transfer-Encoding}{Set-Cookie: session-id=140-1546384-0420752; Domain=.amazon.com; Expires=Tue, 01-Jan-2036 08:00:01 GMT; Path=/}{Set-Cookie: session-id-time=2082787201l; Domain=.amazon.com; Expires=Tue, 01-Jan-2036 08:00:01 GMT; Path=/}
+Mar 07, 2018 11:03:21 AM sun.net.www.protocol.http.HttpURLConnection getInputStream0
+FINE: sun.net.www.MessageHeader@114a67ef16 pairs: {null: HTTP/1.1 200 OK}{Server: Server}{Content-Type: text/html;charset=UTF-8}{Strict-Transport-Security: max-age=47474747; includeSubDomains; preload}{P3P: policyref="https://www.amazon.com/w3c/p3p.xml",CP="CAO DSP LAW CUR ADM IVAo IVDo CONo OTPo OUR DELi PUBi OTRi BUS PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA HEA PRE LOC GOV OTC "}{X-Frame-Options: SAMEORIGIN}{Cache-Control: no-cache}{Pragma: no-cache}{Expires: -1}{Vary: user-agent}{Date: Wed, 07 Mar 2018 10:03:21 GMT}{Transfer-Encoding: chunked}{Connection: keep-alive}{Connection: Transfer-Encoding}{Set-Cookie: session-id=140-1546384-0420752; Domain=.amazon.com; Expires=Tue, 01-Jan-2036 08:00:01 GMT; Path=/}{Set-Cookie: session-id-time=2082787201l; Domain=.amazon.com; Expires=Tue, 01-Jan-2036 08:00:01 GMT; Path=/}
+Mar 07, 2018 11:03:23 AM com.stefanski.amazonbooksearcher.util.IOUtil write
+FINER: Writing file...
+Mar 07, 2018 11:03:23 AM com.stefanski.amazonbooksearcher.util.IOUtil write
+FINER: --DONE!
+Mar 07, 2018 11:03:23 AM com.stefanski.amazonbooksearcher.util.IOUtil write
+FINER: Writing file...
+Mar 07, 2018 11:03:23 AM com.stefanski.amazonbooksearcher.util.IOUtil write
+FINER: --DONE!
+Mar 07, 2018 11:03:23 AM com.stefanski.amazonbooksearcher.util.IOUtil write
+FINER: Writing file...
+Mar 07, 2018 11:03:23 AM com.stefanski.amazonbooksearcher.util.IOUtil write
+FINER: --DONE!
+Mar 07, 2018 11:03:23 AM com.stefanski.amazonbooksearcher.util.IOUtil write
+FINER: Writing file...
+Mar 07, 2018 11:03:23 AM com.stefanski.amazonbooksearcher.util.IOUtil write
+FINER: --DONE!
+Mar 07, 2018 11:03:23 AM com.stefanski.amazonbooksearcher.util.IOUtil write
+FINER: Writing file...
+Mar 07, 2018 11:03:23 AM com.stefanski.amazonbooksearcher.util.IOUtil write
+FINER: --DONE!
+Mar 07, 2018 11:03:24 AM com.stefanski.amazonbooksearcher.util.IOUtil write
+FINER: Writing file...
+Mar 07, 2018 11:03:24 AM com.stefanski.amazonbooksearcher.util.IOUtil write
+FINER: --DONE!
+Mar 07, 2018 11:03:24 AM com.stefanski.amazonbooksearcher.util.IOUtil write
+FINER: Writing file...
+Mar 07, 2018 11:03:24 AM com.stefanski.amazonbooksearcher.util.IOUtil write
+FINER: --DONE!
+Mar 07, 2018 11:03:25 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask run
+FINER: No new Web Links to download!
+Mar 07, 2018 11:03:25 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask run
+FINER: downloadExecutor.shutdown()
+Mar 07, 2018 11:03:25 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask run
+FINER: Waiting for all Executors to terminate ...
+Mar 07, 2018 11:03:25 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask run
+FINEST: --Thread.activeCount(): 2
+Mar 07, 2018 11:03:25 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask run
+FINEST: --downloadExecutor.isShutdown(): true
+Mar 07, 2018 11:03:25 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask run
+FINEST: --downloadExecutor.isTerminated(): true
+Mar 07, 2018 11:03:25 AM com.stefanski.amazonbooksearcher.bgjobs.WebpageDownloaderTask run
+FINE: Multithread web page download	--END
+Mar 07, 2018 11:03:25 AM com.stefanski.amazonbooksearcher.util.Parser parseItemDetails
+FINE: 
+>> Parsing web page for >item details< for: F:\Programowanie\Git\BitBucket\FS_projects\BookSearchApp\downloads\results_for\sql\WebPage_2.html
+Mar 07, 2018 11:03:25 AM com.stefanski.amazonbooksearcher.util.Parser parseItemDetails
+FINE: 
+>> Parsing web page for >item details< for: F:\Programowanie\Git\BitBucket\FS_projects\BookSearchApp\downloads\results_for\sql\WebPage_3.html
+Mar 07, 2018 11:03:25 AM com.stefanski.amazonbooksearcher.util.Parser parseItemDetails
+FINE: 
+>> Parsing web page for >item details< for: F:\Programowanie\Git\BitBucket\FS_projects\BookSearchApp\downloads\results_for\sql\WebPage_4.html
+Mar 07, 2018 11:03:26 AM com.stefanski.amazonbooksearcher.util.Parser parseItemDetails
+FINE: 
+>> Parsing web page for >item details< for: F:\Programowanie\Git\BitBucket\FS_projects\BookSearchApp\downloads\results_for\sql\WebPage_5.html
+Mar 07, 2018 11:03:26 AM com.stefanski.amazonbooksearcher.util.Parser parseItemDetails
+FINE: 
+>> Parsing web page for >item details< for: F:\Programowanie\Git\BitBucket\FS_projects\BookSearchApp\downloads\results_for\sql\WebPage_6.html
+Mar 07, 2018 11:03:26 AM com.stefanski.amazonbooksearcher.util.Parser parseItemDetails
+FINE: 
+>> Parsing web page for >item details< for: F:\Programowanie\Git\BitBucket\FS_projects\BookSearchApp\downloads\results_for\sql\WebPage_7.html
+Mar 07, 2018 11:03:26 AM com.stefanski.amazonbooksearcher.util.Parser parseItemDetails
+FINER: 	Culd not parse >Publisher<!
+Mar 07, 2018 11:03:27 AM com.stefanski.amazonbooksearcher.util.Parser parseItemDetails
+FINE: 
+>> Parsing web page for >item details< for: F:\Programowanie\Git\BitBucket\FS_projects\BookSearchApp\downloads\results_for\sql\WebPage_8.html
+Mar 07, 2018 11:03:27 AM com.stefanski.amazonbooksearcher.util.Parser parseItemDetails
+FINER: 	Culd not parse >Publisher<!
+Mar 07, 2018 11:03:27 AM com.stefanski.amazonbooksearcher.util.Parser parseItemDetails
+FINE: 
+>> Parsing web page for >item details< for: F:\Programowanie\Git\BitBucket\FS_projects\BookSearchApp\downloads\results_for\sql\WebPage_9.html
+Mar 07, 2018 11:03:27 AM com.stefanski.amazonbooksearcher.Launcher runParserItems
+FINE: 	Culd not parse web page: F:\Programowanie\Git\BitBucket\FS_projects\BookSearchApp\downloads\results_for\sql\WebPage_9.html
+Mar 07, 2018 11:03:27 AM com.stefanski.amazonbooksearcher.util.Parser parseItemDetails
+FINE: 
+>> Parsing web page for >item details< for: F:\Programowanie\Git\BitBucket\FS_projects\BookSearchApp\downloads\results_for\sql\WebPage_13.html
+Mar 07, 2018 11:03:27 AM com.stefanski.amazonbooksearcher.util.Parser parseItemDetails
+FINE: 
+>> Parsing web page for >item details< for: F:\Programowanie\Git\BitBucket\FS_projects\BookSearchApp\downloads\results_for\sql\WebPage_14.html
+Mar 07, 2018 11:03:28 AM com.stefanski.amazonbooksearcher.util.Parser parseItemDetails
+FINE: 
+>> Parsing web page for >item details< for: F:\Programowanie\Git\BitBucket\FS_projects\BookSearchApp\downloads\results_for\sql\WebPage_15.html
+Mar 07, 2018 11:03:28 AM com.stefanski.amazonbooksearcher.util.Parser parseItemDetails
+FINE: 
+>> Parsing web page for >item details< for: F:\Programowanie\Git\BitBucket\FS_projects\BookSearchApp\downloads\results_for\sql\WebPage_16.html
+Mar 07, 2018 11:03:28 AM com.stefanski.amazonbooksearcher.util.Parser parseItemDetails
+FINER: 	Culd not parse >Publisher<!
+Mar 07, 2018 11:03:28 AM com.stefanski.amazonbooksearcher.util.Parser parseItemDetails
+FINE: 
+>> Parsing web page for >item details< for: F:\Programowanie\Git\BitBucket\FS_projects\BookSearchApp\downloads\results_for\sql\WebPage_17.html
+Mar 07, 2018 11:03:28 AM com.stefanski.amazonbooksearcher.util.Parser parseItemDetails
+FINE: 
+>> Parsing web page for >item details< for: F:\Programowanie\Git\BitBucket\FS_projects\BookSearchApp\downloads\results_for\sql\WebPage_18.html
+Mar 07, 2018 11:03:29 AM com.stefanski.amazonbooksearcher.util.Parser parseItemDetails
+FINE: 
+>> Parsing web page for >item details< for: F:\Programowanie\Git\BitBucket\FS_projects\BookSearchApp\downloads\results_for\sql\WebPage_19.html
+Mar 07, 2018 11:03:29 AM com.stefanski.amazonbooksearcher.util.Parser parseItemDetails
+FINE: 
+>> Parsing web page for >item details< for: F:\Programowanie\Git\BitBucket\FS_projects\BookSearchApp\downloads\results_for\sql\WebPage_18.html
+Mar 07, 2018 11:03:29 AM com.stefanski.amazonbooksearcher.util.Parser parseItemDetails
+FINE: 
+>> Parsing web page for >item details< for: F:\Programowanie\Git\BitBucket\FS_projects\BookSearchApp\downloads\results_for\sql\WebPage_19.html
+Mar 07, 2018 11:03:30 AM com.stefanski.amazonbooksearcher.util.Parser parseItemDetails
+FINE: 
+>> Parsing web page for >item details< for: F:\Programowanie\Git\BitBucket\FS_projects\BookSearchApp\downloads\results_for\sql\WebPage_20.html
+Mar 07, 2018 11:03:30 AM com.stefanski.amazonbooksearcher.util.Parser parseItemDetails
+FINER: 	Culd not parse >Publisher<!
+Mar 07, 2018 11:03:30 AM com.stefanski.amazonbooksearcher.util.Parser parseItemDetails
+FINE: 
+>> Parsing web page for >item details< for: F:\Programowanie\Git\BitBucket\FS_projects\BookSearchApp\downloads\results_for\sql\WebPage_21.html
+Mar 07, 2018 11:03:30 AM com.stefanski.amazonbooksearcher.util.Parser parseItemDetails
+FINE: 
+>> Parsing web page for >item details< for: F:\Programowanie\Git\BitBucket\FS_projects\BookSearchApp\downloads\results_for\sql\WebPage_22.html
+Mar 07, 2018 11:03:30 AM com.stefanski.amazonbooksearcher.util.Parser parseItemDetails
+FINE: 
+>> Parsing web page for >item details< for: F:\Programowanie\Git\BitBucket\FS_projects\BookSearchApp\downloads\results_for\sql\WebPage_23.html
+Mar 07, 2018 11:03:31 AM com.stefanski.amazonbooksearcher.util.Parser parseItemDetails
+FINER: 	Culd not parse >Publisher<!
+Mar 07, 2018 11:03:31 AM com.stefanski.amazonbooksearcher.util.Parser parseItemDetails
+FINE: 
+>> Parsing web page for >item details< for: F:\Programowanie\Git\BitBucket\FS_projects\BookSearchApp\downloads\results_for\sql\WebPage_24.html
+Mar 07, 2018 11:03:31 AM com.stefanski.amazonbooksearcher.util.Parser parseItemDetails
+FINE: 
+>> Parsing web page for >item details< for: F:\Programowanie\Git\BitBucket\FS_projects\BookSearchApp\downloads\results_for\sql\WebPage_25.html
+Mar 07, 2018 11:03:31 AM com.stefanski.amazonbooksearcher.util.Parser parseItemDetails
+FINE: 
+>> Parsing web page for >item details< for: F:\Programowanie\Git\BitBucket\FS_projects\BookSearchApp\downloads\results_for\sql\WebPage_26.html
+Mar 07, 2018 11:03:32 AM com.stefanski.amazonbooksearcher.util.Parser parseItemDetails
+FINE: 
+>> Parsing web page for >item details< for: F:\Programowanie\Git\BitBucket\FS_projects\BookSearchApp\downloads\results_for\sql\WebPage_27.html
+Mar 07, 2018 11:03:32 AM com.stefanski.amazonbooksearcher.Launcher runParserItems
+FINE: 	Culd not parse web page: F:\Programowanie\Git\BitBucket\FS_projects\BookSearchApp\downloads\results_for\sql\WebPage_27.html
+Mar 07, 2018 11:03:32 AM com.stefanski.amazonbooksearcher.util.Parser parseItemDetails
+FINE: 
+>> Parsing web page for >item details< for: F:\Programowanie\Git\BitBucket\FS_projects\BookSearchApp\downloads\results_for\sql\WebPage_28.html
+Mar 07, 2018 11:03:32 AM com.stefanski.amazonbooksearcher.util.Parser parseItemDetails
+FINE: 
+>> Parsing web page for >item details< for: F:\Programowanie\Git\BitBucket\FS_projects\BookSearchApp\downloads\results_for\sql\WebPage_29.html
+Mar 07, 2018 11:03:37 AM com.stefanski.amazonbooksearcher.Launcher printAllItems
+FINE: 25 items found!
