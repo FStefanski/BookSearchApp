@@ -94,16 +94,16 @@ public class Parser {
 	 * key - one item per web page.</b><br>
 	 * <br>
 	 * Parsing process divided in five steps:
-	 * <li>Step 1: extract all authors from web page -- webPagePrasingKey
-	 * [0,1].</li>
+	 * <li>Step 1: extract cover url and all authors from web page --
+	 * webPagePrasingKey [0,3].</li>
 	 * <li>Step 2: find web page part with product details --
 	 * productDescriptionPrasingKey.</li>
 	 * <li>Step 3: extract publication year and publisher from publication details
-	 * -- keys [2,3].</li>
+	 * -- keys [4,5].</li>
 	 * <li>Step 4: extract ISBN from product details -- webPagePrasingKey
-	 * [4,5].</li>
+	 * [6,7].</li>
 	 * <li>Step 5: extract Average Customer Review from publication details --
-	 * webPagePrasingKey [6,7], e.g. 4.3 from "4.3 out of 5."</li><br>
+	 * webPagePrasingKey [8,9], e.g. 4.3 from "4.3 out of 5."</li><br>
 	 * 
 	 * @param webLink
 	 *            - contains the web page in String
@@ -129,6 +129,7 @@ public class Parser {
 
 		Scanner scanner = new Scanner(IOUtil.read(new FileInputStream(file)));
 		String line;
+
 		boolean productDescriptionFoundFlag = false;
 		boolean amazonRatingFoundFlag = false;
 
@@ -139,13 +140,34 @@ public class Parser {
 		while (scanner.hasNextLine()) { // terminates when end-of-file found
 			line = scanner.nextLine();
 
-			// step 1: extract all authors from web page -- keys [0,1]
+			// step 1: extract cover URL and all authors from web page -- keys [0,3]
 			if (!line.contains(productDescriptionPrasingKey[0]) && !productDescriptionFoundFlag) {
+
+				// cover URL
 				if (line.contains(webPagePrasingKey[0])) {
 
-					startIndex = line.indexOf(webPagePrasingKey[0]) + webPagePrasingKey[0].length();
+					startIndex = line.indexOf("https:");
+					endIndex = startIndex + line.substring(startIndex, line.length()).indexOf(webPagePrasingKey[0 + 1])
+							+ webPagePrasingKey[0 + 1].length();
 
-					endIndex = startIndex + line.substring(startIndex, line.length()).indexOf(webPagePrasingKey[0 + 1]);
+					String coverURL = null;
+					try {
+						coverURL = line.substring(startIndex, endIndex);
+						System.out.println("\tcoverURL: " + coverURL);
+					} catch (StringIndexOutOfBoundsException e) {
+						System.err.println("\tCuld not parse >Cover URL<!");
+						LOGGER.log(Level.FINER, "\tCuld not parse >Cover URL<!");
+						// e.printStackTrace();
+					}
+					parsingResultsList.add(coverURL);
+				}
+
+				// authors
+				if (line.contains(webPagePrasingKey[2])) {
+
+					startIndex = line.indexOf(webPagePrasingKey[2]) + webPagePrasingKey[2].length();
+
+					endIndex = startIndex + line.substring(startIndex, line.length()).indexOf(webPagePrasingKey[2 + 1]);
 
 					try {
 						authorsBuilder.append(line.substring(startIndex, endIndex)).append(" ");
@@ -154,7 +176,6 @@ public class Parser {
 						LOGGER.log(Level.FINER, "\tCuld not parse >Authors<!");
 						// e.printStackTrace();
 					}
-					// System.out.println("\t<> Step 1 --Done!");
 				}
 			} else if (line.contains(productDescriptionPrasingKey[0]) && !productDescriptionFoundFlag) {
 
@@ -163,30 +184,28 @@ public class Parser {
 				String authors = authorsBuilder.toString();
 				if (!authors.isEmpty()) {
 					authors = authors.replaceAll(" ", ",").replaceAll("-", " ").substring(0, authors.length() - 1);
+					System.out.println("\tauthors: " + authors);
 				}
-
 				parsingResultsList.add(authors);
-				// System.out.println("\t" + parsingResultsList.toString());
 
-				// step 2: find web page part with product details
-				// System.out.println("\t<> Step 2 --Done!");
+				// Step 2: find web page part with product details
 				productDescriptionFoundFlag = true;
 			}
 			if (productDescriptionFoundFlag) {
 
-				if (line.contains(webPagePrasingKey[2])) {
-					// System.out.println("\tline: " + line);
-					// step 3: extract publication year and publisher from publication details --
-					// keys [2,3]
+				if (line.contains(webPagePrasingKey[4])) {
+					// Step 3: extract publication year and publisher from publication details
+					// -- keys [4,5]
 
-					startIndex = line.indexOf(webPagePrasingKey[2]) + webPagePrasingKey[2].length();
+					startIndex = line.indexOf(webPagePrasingKey[4]) + webPagePrasingKey[4].length();
 
-					endIndex = startIndex + line.substring(startIndex, line.length()).indexOf(webPagePrasingKey[2 + 1]);
+					endIndex = startIndex + line.substring(startIndex, line.length()).indexOf(webPagePrasingKey[4 + 1]);
 
 					// publisher
 					String publisher = null;
 					try {
 						publisher = line.substring(startIndex, endIndex);
+						System.out.println("\tpublisher: " + publisher);
 					} catch (StringIndexOutOfBoundsException e) {
 						System.err.println("\tCuld not parse >Publisher<!");
 						LOGGER.log(Level.FINER, "\tCuld not parse >Publisher<!");
@@ -194,63 +213,54 @@ public class Parser {
 					}
 					parsingResultsList.add(publisher);
 
-					// publication year
-					// e.g. McGrw-Hill Education; 9 edition (April 1, 2014),
+					// publication year, e.g. McGrw-Hill Education; 9 edition (April 1, 2014),
 					Pattern pattern = Pattern.compile("(19\\d\\d|20\\d\\d)");
 					Matcher matcher = pattern.matcher(line);
 					String publicationYear = null;
 					if (matcher.find()) {
 						publicationYear = matcher.group(1);
+						System.out.println("\tpublicationYear: " + publicationYear);
 					} else {
 						System.err.println("\tCuld not parse >Publication year<!");
 						LOGGER.log(Level.FINER, "\tCuld not parse >Publication year<!");
 					}
 					parsingResultsList.add(publicationYear);
-
-					// System.out.println("\t<> Step 3 --Done!");
-					// System.out.println("\t" + parsingResultsList.toString());
 				}
-				if (line.contains(webPagePrasingKey[4])) {
+				if (line.contains(webPagePrasingKey[6])) {
 
-					// step 3: extract ISBN from product details -- keys [4,5]
-					startIndex = line.indexOf(webPagePrasingKey[4]) + webPagePrasingKey[4].length();
+					// Step 4: extract ISBN from product details -- keys [6,7]
+					startIndex = line.indexOf(webPagePrasingKey[6]) + webPagePrasingKey[6].length();
 
-					endIndex = startIndex + line.substring(startIndex, line.length()).indexOf(webPagePrasingKey[4 + 1]);
+					endIndex = startIndex + line.substring(startIndex, line.length()).indexOf(webPagePrasingKey[6 + 1]);
 
 					String isbn = "N/D";
 					try {
 						isbn = line.substring(startIndex, endIndex);
-						;
+						System.out.println("\tisbn: " + isbn);
 					} catch (StringIndexOutOfBoundsException e) {
 						System.err.println("\tCuld not parse >ISBN<!");
 						LOGGER.log(Level.FINER, "\tCuld not parse >ISBN<!");
 						// e.printStackTrace();
 					}
 					parsingResultsList.add(isbn);
-
-					// System.out.println("\t<> Step 4 --Done!");
-					// System.out.println("\t" + parsingResultsList.toString());
 				}
-				if (line.contains(webPagePrasingKey[6]) && (amazonRatingFoundFlag == false)) {
-					// step 5: extract Average Customer Review from publication details -- keys
-					// [8,9]
-					// e.g. "4.3 out of 5"
+				if (line.contains(webPagePrasingKey[8]) && (amazonRatingFoundFlag == false)) {
+					// Step 5: extract Average Customer Review from publication details -- keys
+					// [8,9], e.g. "4.3 out of 5"
 
-					endIndex = line.indexOf(webPagePrasingKey[6]); // " out of 5"
+					endIndex = line.indexOf(webPagePrasingKey[8]); // " out of 5"
 					startIndex = endIndex - 3; // "4.3"
 
 					String amazonRating = "0.0";
 					try {
 						amazonRating = line.substring(startIndex, endIndex);
+						System.out.println("\tamazonRating: " + amazonRating);
 					} catch (StringIndexOutOfBoundsException e) {
 						System.err.println("\tCuld not parse >Amazon Raiting<!");
 						LOGGER.log(Level.FINER, "\tCuld not parse >Amazon Raiting<!");
 						// e.printStackTrace();
 					}
 					parsingResultsList.add(amazonRating);
-
-					// System.out.println("\t<> Step 5 --Done!");
-					// System.out.println("\t" + parsingResultsList.toString());
 					amazonRatingFoundFlag = true;
 				}
 			}

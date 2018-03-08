@@ -59,9 +59,7 @@ public class ItemModel {
 			this.isbn = new SimpleStringProperty(((Book) item).getIsbn());
 			this.amazonRating = new SimpleDoubleProperty(((Book) item).getAmazonRating());
 
-			// this.coverURL = new SimpleStringProperty(((Book) item).getCoverURL());
-			// TODO implement item's cover url parse
-			this.coverURL = new SimpleStringProperty("file:resources/images/noImageAvalible.jpg");
+			this.coverURL = new SimpleStringProperty(((Book) item).getCoverURL());
 		} else {
 			// else if(item instanceof Ebook) { // TODO }
 			this.authors = new SimpleStringProperty("N/D");
@@ -166,7 +164,7 @@ public class ItemModel {
 		return coverURL.get();
 	}
 
-	public StringProperty getCoverURLProperty() {
+	public StringProperty coverURLProperty() {
 		return coverURL;
 	}
 }

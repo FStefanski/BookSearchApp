@@ -23,8 +23,6 @@ import com.stefanski.booksearch.managers.ItemManager;
 import com.stefanski.booksearch.managers.WebLinkManager;
 import com.stefanski.booksearch.util.Parser;
 
-import javafx.application.Application;
-
 /**
  * <br>
  * <b>Project assumptions:</b>
@@ -98,7 +96,7 @@ public class Launcher {
 			runParseSearchResults(initialWebLink);
 
 			// Background Jobs -> download all results web pages
-			runDownloaderJob();
+			// runDownloaderJob();
 
 			// Parsing web pages for item details
 			runParserItems();
@@ -257,7 +255,7 @@ public class Launcher {
 				try {
 					itemsDao.saveItem(ItemManager.getInstance().createBook(parseSearchResutlts.get(0),
 							parseSearchResutlts.get(1), parseSearchResutlts.get(2), parseSearchResutlts.get(3),
-							parseSearchResutlts.get(4), webLink));
+							parseSearchResutlts.get(4), parseSearchResutlts.get(5), webLink));
 
 				} catch (IndexOutOfBoundsException e) {
 					System.err.println("\tCuld not parse web page: " + webLink.getWebPageFilePath()

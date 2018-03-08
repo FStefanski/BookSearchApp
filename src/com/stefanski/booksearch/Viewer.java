@@ -50,7 +50,7 @@ public class Viewer extends Application {
 
 		System.out.println("\t<> Viewer loaded " + itemsDataList.size() + " positions to present ...");
 		System.out.println("\t\t--First Item: id: " + itemsDataList.get(0).idProperty() + ", title: "
-				+ itemsDataList.get(0).titleProperty());
+				+ itemsDataList.get(0).titleProperty() + ", cover url: " + itemsDataList.get(0).coverURLProperty());
 	}
 
 	/**

@@ -49,14 +49,15 @@ public class ItemManager {
 	 * @param webLink
 	 * @return Book
 	 */
-	public Book createBook(String authors, String publisher, String publicationYear, String isbn, String amazonRating,
-			WebLink webLink) {
+	public Book createBook(String coverURL, String authors, String publisher, String publicationYear, String isbn,
+			String amazonRating, WebLink webLink) {
 
 		Book book = new Book();
 
 		book.setId(webLink.getId());
 		book.setTitle(webLink.getTitle());
 
+		book.setCoverURL(coverURL);
 		book.setPublicationYear(Year.of(Integer.parseInt(publicationYear)));
 		book.setPublisher(publisher);
 		book.setAuthors(authors.split(","));
