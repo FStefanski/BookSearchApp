@@ -3,8 +3,6 @@ package com.stefanski.booksearch.view;
 import com.stefanski.booksearch.Viewer;
 import com.stefanski.booksearch.models.ItemModel;
 
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
@@ -45,7 +43,9 @@ public class ItemOverviewController {
 	@FXML
 	private Label amazonRatingLabel;
 
-	// cover viwew
+	// cover view
+	private String coverURL;
+
 	@FXML
 	private ImageView coverView = new ImageView();
 	@FXML
@@ -115,6 +115,7 @@ public class ItemOverviewController {
 			isbnLabel.setText(itemModel.getIsbn());
 			amazonRatingLabel.setText(Double.toString(itemModel.getAmazonRating()));
 
+			setCoverURL(itemModel.getCoverURL());
 		} else {
 			// itemModel is null, remove all the text.
 			titleLabel.setText("");
@@ -123,15 +124,35 @@ public class ItemOverviewController {
 			publicationYearLabel.setText("");
 			isbnLabel.setText("");
 			amazonRatingLabel.setText("");
+
+			setCoverURL("file:resources/images/noImageAvalible.jpg");
 		}
+
+		// change cover image if radial button pressed
+		handleShowCover();
 	}
 
 	/**
-	 * Called when the user clicks on the delete button.
+	 * Called when the user press on the show cover button.
 	 */
 	@FXML
 	private void handleShowCover() {
-		System.out.println("Button presed!");
-		coverView.setImage(new Image("http://mikecann.co.uk/wp-content/uploads/2009/12/javafx_logo_color_1.jpg"));
+
+		if (showCoverButton.isSelected()) {
+			// System.out.println("Button pressed!");
+			coverView.setImage(new Image(getCoverURL()));
+		} else {
+			// System.out.println("Button released!");
+			coverView.setImage(new Image("file:resources/images/Book_search.png"));
+		}
 	}
+
+	public String getCoverURL() {
+		return coverURL;
+	}
+
+	public void setCoverURL(String coverURL) {
+		this.coverURL = coverURL;
+	}
+
 }

@@ -32,6 +32,8 @@ public class ItemModel {
 	private final StringProperty isbn;
 	private final DoubleProperty amazonRating;
 
+	private final StringProperty coverURL;
+
 	/**
 	 * Default constructor.
 	 */
@@ -56,6 +58,10 @@ public class ItemModel {
 			this.publicationYear = new SimpleObjectProperty(((Book) item).getPublicationYear());
 			this.isbn = new SimpleStringProperty(((Book) item).getIsbn());
 			this.amazonRating = new SimpleDoubleProperty(((Book) item).getAmazonRating());
+
+			// this.coverURL = new SimpleStringProperty(((Book) item).getCoverURL());
+			// TODO implement item's cover url parse
+			this.coverURL = new SimpleStringProperty("file:resources/images/noImageAvalible.jpg");
 		} else {
 			// else if(item instanceof Ebook) { // TODO }
 			this.authors = new SimpleStringProperty("N/D");
@@ -63,6 +69,8 @@ public class ItemModel {
 			this.publicationYear = new SimpleObjectProperty("N/D");
 			this.isbn = new SimpleStringProperty("N/D");
 			this.amazonRating = new SimpleDoubleProperty(0.0);
+
+			this.coverURL = new SimpleStringProperty("N/D");
 		}
 	}
 
@@ -148,5 +156,17 @@ public class ItemModel {
 
 	public DoubleProperty amazonRatingProperty() {
 		return amazonRating;
+	}
+
+	public void setCoverURL(String coverURL) {
+		this.coverURL.set(coverURL);
+	}
+
+	public String getCoverURL() {
+		return coverURL.get();
+	}
+
+	public StringProperty getCoverURLProperty() {
+		return coverURL;
 	}
 }
