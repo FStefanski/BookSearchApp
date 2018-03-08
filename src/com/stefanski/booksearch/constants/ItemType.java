@@ -14,7 +14,7 @@ package com.stefanski.booksearch.constants;
  *
  */
 public enum ItemType {
-	BOOK("Book"), EBOOK("Ebook");
+	BOOK("Book"), EBOOK("Ebook"), AUDIOBOOK("Audiobook");
 
 	private String name;
 

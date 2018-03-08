@@ -25,6 +25,8 @@ public class Book extends Item implements Shareable, Serializable {
 	private String isbn;
 	private double amazonRating;
 
+	private String coverURL;
+
 	public Book() {
 		super(ItemType.BOOK);
 	}
@@ -49,7 +51,7 @@ public class Book extends Item implements Shareable, Serializable {
 	@Override
 	public String toString() {
 		return "[id=" + super.getId() + ", \"" + super.getTitle() + "\" by " + Arrays.toString(authors) + ", "
-				+ publisher + " (" + publicationYear + "), " + ", " + amazonRating + " of of 5 stars]";
+				+ publisher + " (" + publicationYear + "), " + isbn + ", " + amazonRating + " of of 5 stars]";
 	}
 
 	public Year getPublicationYear() {
@@ -90,5 +92,13 @@ public class Book extends Item implements Shareable, Serializable {
 
 	public void setAmazonRating(double amazonRating) {
 		this.amazonRating = amazonRating;
+	}
+
+	public String getCoverURL() {
+		return coverURL;
+	}
+
+	public void setCoverURL(String coverURL) {
+		this.coverURL = coverURL;
 	}
 }
