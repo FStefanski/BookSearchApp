@@ -58,5 +58,4 @@ public abstract class Item implements Serializable {
 	public void setItemType(ItemType itemType) {
 		this.itemType = itemType;
 	}
-
 }

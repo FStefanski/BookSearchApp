@@ -31,14 +31,14 @@ public class Parser {
 	 * 
 	 * @param initialWebLink
 	 *            - web link containing search result web page in String format
-	 * @param parsingKey
+	 * @param parsingKeys
 	 *            - Strings array of parsing keys, with a beginning and finishing
 	 *            key per searched value
 	 * @param dontParsKey
 	 *            - values that should not be returned, e.g. sponsored links.
 	 * @return Lists of String lists of results in {id, title, URL} sequence.
 	 */
-	public List<List<String>> parseSearchResutlts(InitialWebLink initialWebLink, String[] parsingKey,
+	public List<List<String>> parseSearchResutlts(InitialWebLink initialWebLink, String[] parsingKeys,
 			String dontParsKey) {
 
 		System.out.println("\n>> Parsing web page for >search results< ...");
@@ -54,23 +54,23 @@ public class Parser {
 				line = scanner.nextLine();
 
 				// search results parsing - all data in one line
-				for (int index = 0; index < (parsingKey.length); index += 2) {
-					if (line.contains(parsingKey[0]) && (line.contains(dontParsKey) == false)) {
+				for (int index = 0; index < (parsingKeys.length); index += 2) {
+					if (line.contains(parsingKeys[0]) && (line.contains(dontParsKey) == false)) {
 
 						int startIndex;
-						if (parsingKey[index].contains("https:")) {
+						if (parsingKeys[index].contains("https:")) {
 
 							// for URLs only: choose the url after title + adding "https://www.amazon.com/"
-							startIndex = line.indexOf(parsingKey[0])
-									+ line.substring(line.indexOf(parsingKey[0])).indexOf(parsingKey[index])
-									+ parsingKey[index].length()
-									- (parsingKey[index].length() - parsingKey[index].indexOf("https:"));
+							startIndex = line.indexOf(parsingKeys[0])
+									+ line.substring(line.indexOf(parsingKeys[0])).indexOf(parsingKeys[index])
+									+ parsingKeys[index].length()
+									- (parsingKeys[index].length() - parsingKeys[index].indexOf("https:"));
 						} else {
-							startIndex = line.indexOf(parsingKey[index]) + parsingKey[index].length();
+							startIndex = line.indexOf(parsingKeys[index]) + parsingKeys[index].length();
 						}
 
 						int endIndex = startIndex
-								+ line.substring(startIndex, line.length()).indexOf(parsingKey[index + 1]);
+								+ line.substring(startIndex, line.length()).indexOf(parsingKeys[index + 1]);
 
 						resultsList.add(line.substring(startIndex, endIndex));
 						// System.out.println("\t" + line.substring(startIndex, endIndex));
@@ -98,12 +98,12 @@ public class Parser {
 	 * [0,1].</li>
 	 * <li>Step 2: find web page part with product details --
 	 * productDescriptionPrasingKey.</li>
-	 * <li>Step 3: extract rest of the keys from product details --
-	 * webPagePrasingKey [4-9].</li>
-	 * <li>Step 4: extract publication year and publisher from publication details
-	 * -- keys [4,5].</li>
+	 * <li>Step 3: extract publication year and publisher from publication details
+	 * -- keys [2,3].</li>
+	 * <li>Step 4: extract ISBN from product details -- webPagePrasingKey
+	 * [4,5].</li>
 	 * <li>Step 5: extract Average Customer Review from publication details --
-	 * webPagePrasingKey [8,9], e.g. 4.3 from "4.3 out of 5."</li><br>
+	 * webPagePrasingKey [6,7], e.g. 4.3 from "4.3 out of 5."</li><br>
 	 * 
 	 * @param webLink
 	 *            - contains the web page in String
@@ -174,22 +174,10 @@ public class Parser {
 			}
 			if (productDescriptionFoundFlag) {
 
-				if (line.contains(webPagePrasingKey[4])) {
-
-					// step 3: extract rest of the keys from product details -- keys [4-9]
-					startIndex = line.indexOf(webPagePrasingKey[4]) + webPagePrasingKey[4].length();
-
-					endIndex = startIndex + line.substring(startIndex, line.length()).indexOf(webPagePrasingKey[4 + 1]);
-
-					parsingResultsList.add(line.substring(startIndex, endIndex));
-
-					// System.out.println("\t<> Step 3 --Done!");
-					// System.out.println("\t" + parsingResultsList.toString());
-				}
 				if (line.contains(webPagePrasingKey[2])) {
 					// System.out.println("\tline: " + line);
-					// step 4: extract publication year and publisher from publication details --
-					// keys [4,5]
+					// step 3: extract publication year and publisher from publication details --
+					// keys [2,3]
 
 					startIndex = line.indexOf(webPagePrasingKey[2]) + webPagePrasingKey[2].length();
 
@@ -218,6 +206,27 @@ public class Parser {
 						LOGGER.log(Level.FINER, "\tCuld not parse >Publication year<!");
 					}
 					parsingResultsList.add(publicationYear);
+
+					// System.out.println("\t<> Step 3 --Done!");
+					// System.out.println("\t" + parsingResultsList.toString());
+				}
+				if (line.contains(webPagePrasingKey[4])) {
+
+					// step 3: extract ISBN from product details -- keys [4,5]
+					startIndex = line.indexOf(webPagePrasingKey[4]) + webPagePrasingKey[4].length();
+
+					endIndex = startIndex + line.substring(startIndex, line.length()).indexOf(webPagePrasingKey[4 + 1]);
+
+					String isbn = "N/D";
+					try {
+						isbn = line.substring(startIndex, endIndex);
+						;
+					} catch (StringIndexOutOfBoundsException e) {
+						System.err.println("\tCuld not parse >ISBN<!");
+						LOGGER.log(Level.FINER, "\tCuld not parse >ISBN<!");
+						// e.printStackTrace();
+					}
+					parsingResultsList.add(isbn);
 
 					// System.out.println("\t<> Step 4 --Done!");
 					// System.out.println("\t" + parsingResultsList.toString());

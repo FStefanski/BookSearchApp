@@ -113,8 +113,8 @@ public class Launcher {
 			printAllItems();
 		}
 
-		// Launch javaFx viewer
-		// Application.launchView.class, args);
+		// Launch JavaFX viewer
+		Viewer.runViewer();
 	}
 
 	/**
@@ -203,7 +203,7 @@ public class Launcher {
 
 		if (initialWebLink.getDownloadStatus() == DownloadStatus.SUCCESS) {
 			parseSearchResutlts = newParser.parseSearchResutlts(initialWebLink, SearchResultPrasingKey.parsingKey,
-					SearchResultPrasingKey.DONT_PRASE_SPONSORED_URL);
+					SearchResultPrasingKey.DONT_PARSE_SPONSORED_URL);
 
 			for (List<String> list : parseSearchResutlts) {
 				webLinksDao.saveWebLink(WebLinkManager.getInstance().createWebLink(Long.parseLong(list.get(0)),
@@ -285,7 +285,7 @@ public class Launcher {
 		System.out.println("\n>> Items saved: ");
 		if (!itemsDao.getAllItems().isEmpty()) {
 			for (Item item : itemsDao.getAllItems()) {
-				System.out.println(item.toString());
+				System.out.println("\t" + item.toString());
 			}
 			LOGGER.log(Level.FINE, itemsDao.getAllItems().size() + " items found!");
 		} else {

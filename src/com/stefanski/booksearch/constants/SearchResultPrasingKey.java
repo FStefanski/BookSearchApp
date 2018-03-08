@@ -8,7 +8,7 @@ package com.stefanski.booksearch.constants;
  */
 public class SearchResultPrasingKey {
 
-	public static final String DONT_PRASE_SPONSORED_URL = "href=\"/gp/slredirect/";
+	public static final String DONT_PARSE_SPONSORED_URL = "href=\"/gp/slredirect/";
 
 	private static final String RESULT_START = "<li id=\"result_";
 	private static final String RESULT_END = "\"";
