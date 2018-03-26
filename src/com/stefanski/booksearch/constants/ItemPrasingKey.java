@@ -15,7 +15,7 @@ public class ItemPrasingKey {
 	private static final String AUTHORS_END = "/";
 
 	private static final String PUBLISHER_AND_PUBLICATION_YEAR_START = "<li><b>Publisher:</b> ";
-	private static final String PUBLISHER_AND_PUBLICATION_YEAR_END = ";";
+	private static final String PUBLISHER_AND_PUBLICATION_YEAR_END = "(";
 
 	private static final String ISBN_START = "<li><b>ISBN-13:</b> ";
 	private static final String ISBN_END = "</li>";

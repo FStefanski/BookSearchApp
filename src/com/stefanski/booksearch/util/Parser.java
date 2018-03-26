@@ -153,7 +153,7 @@ public class Parser {
 					String coverURL = null;
 					try {
 						coverURL = line.substring(startIndex, endIndex);
-						System.out.println("\tcoverURL: " + coverURL);
+						// System.out.println("\tcoverURL: " + coverURL);
 					} catch (StringIndexOutOfBoundsException e) {
 						System.err.println("\tCuld not parse >Cover URL<!");
 						LOGGER.log(Level.FINER, "\tCuld not parse >Cover URL<!");
@@ -184,7 +184,7 @@ public class Parser {
 				String authors = authorsBuilder.toString();
 				if (!authors.isEmpty()) {
 					authors = authors.replaceAll(" ", ",").replaceAll("-", " ").substring(0, authors.length() - 1);
-					System.out.println("\tauthors: " + authors);
+					// System.out.println("\tauthors: " + authors);
 				}
 				parsingResultsList.add(authors);
 
@@ -219,7 +219,7 @@ public class Parser {
 					String publicationYear = null;
 					if (matcher.find()) {
 						publicationYear = matcher.group(1);
-						System.out.println("\tpublicationYear: " + publicationYear);
+						// System.out.println("\tpublicationYear: " + publicationYear);
 					} else {
 						System.err.println("\tCuld not parse >Publication year<!");
 						LOGGER.log(Level.FINER, "\tCuld not parse >Publication year<!");
@@ -236,7 +236,7 @@ public class Parser {
 					String isbn = "N/D";
 					try {
 						isbn = line.substring(startIndex, endIndex);
-						System.out.println("\tisbn: " + isbn);
+						// System.out.println("\tisbn: " + isbn);
 					} catch (StringIndexOutOfBoundsException e) {
 						System.err.println("\tCuld not parse >ISBN<!");
 						LOGGER.log(Level.FINER, "\tCuld not parse >ISBN<!");
@@ -254,7 +254,7 @@ public class Parser {
 					String amazonRating = "0.0";
 					try {
 						amazonRating = line.substring(startIndex, endIndex);
-						System.out.println("\tamazonRating: " + amazonRating);
+						// System.out.println("\tamazonRating: " + amazonRating);
 					} catch (StringIndexOutOfBoundsException e) {
 						System.err.println("\tCuld not parse >Amazon Raiting<!");
 						LOGGER.log(Level.FINER, "\tCuld not parse >Amazon Raiting<!");

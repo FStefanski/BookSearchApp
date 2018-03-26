@@ -96,7 +96,7 @@ public class Launcher {
 			runParseSearchResults(initialWebLink);
 
 			// Background Jobs -> download all results web pages
-			// runDownloaderJob();
+			runDownloaderJob();
 
 			// Parsing web pages for item details
 			runParserItems();
@@ -203,12 +203,19 @@ public class Launcher {
 			parseSearchResutlts = newParser.parseSearchResutlts(initialWebLink, SearchResultPrasingKey.parsingKey,
 					SearchResultPrasingKey.DONT_PARSE_SPONSORED_URL);
 
-			for (List<String> list : parseSearchResutlts) {
-				webLinksDao.saveWebLink(WebLinkManager.getInstance().createWebLink(Long.parseLong(list.get(0)),
-						list.get(1), list.get(2)));
-			}
-			for (WebLink webLink : webLinksDao.getAllWebLinks()) {
-				System.out.println("\t--" + webLink.toString());
+			if (parseSearchResutlts.isEmpty()) {
+
+				System.err.println("\tNo search results found! Check initial web page.");
+				LOGGER.log(Level.FINE, "\tNo search results found! Check initial web page.");
+				System.exit(0);
+			} else {
+				for (List<String> list : parseSearchResutlts) {
+					webLinksDao.saveWebLink(WebLinkManager.getInstance().createWebLink(Long.parseLong(list.get(0)),
+							list.get(1), list.get(2)));
+				}
+				for (WebLink webLink : webLinksDao.getAllWebLinks()) {
+					System.out.println("\t--" + webLink.toString());
+				}
 			}
 		} else {
 			System.out.println(">> Initial web page not downloaded!");
@@ -289,6 +296,7 @@ public class Launcher {
 		} else {
 			System.err.println("\tNo items found! Check initial web page.");
 			LOGGER.log(Level.FINE, "\tNo items found! Check initial web page.");
+			System.exit(0);
 		}
 	}
 
