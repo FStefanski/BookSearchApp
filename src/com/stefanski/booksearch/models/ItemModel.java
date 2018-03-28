@@ -31,6 +31,7 @@ public class ItemModel {
 	private final ObjectProperty<Year> publicationYear;
 	private final StringProperty isbn;
 	private final DoubleProperty amazonRating;
+	private final StringProperty amazonUrl;
 
 	private final StringProperty coverURL;
 
@@ -58,6 +59,7 @@ public class ItemModel {
 			this.publicationYear = new SimpleObjectProperty(((Book) item).getPublicationYear());
 			this.isbn = new SimpleStringProperty(((Book) item).getIsbn());
 			this.amazonRating = new SimpleDoubleProperty(((Book) item).getAmazonRating());
+			this.amazonUrl = new SimpleStringProperty(((Book) item).getWebLink().getUrl());
 
 			this.coverURL = new SimpleStringProperty(((Book) item).getCoverURL());
 		} else {
@@ -67,6 +69,7 @@ public class ItemModel {
 			this.publicationYear = new SimpleObjectProperty("N/D");
 			this.isbn = new SimpleStringProperty("N/D");
 			this.amazonRating = new SimpleDoubleProperty(0.0);
+			this.amazonUrl = new SimpleStringProperty("N/D");
 
 			this.coverURL = new SimpleStringProperty("N/D");
 		}
@@ -154,6 +157,18 @@ public class ItemModel {
 
 	public DoubleProperty amazonRatingProperty() {
 		return amazonRating;
+	}
+
+	public String getAmazonUrl() {
+		return amazonUrl.get();
+	}
+
+	public void setAmazonUrl(String amazonUrl) {
+		this.amazonUrl.set(amazonUrl);
+	}
+
+	public StringProperty amazonUrlProperty() {
+		return amazonUrl;
 	}
 
 	public void setCoverURL(String coverURL) {

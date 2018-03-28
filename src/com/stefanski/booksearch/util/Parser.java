@@ -72,7 +72,7 @@ public class Parser {
 						int endIndex = startIndex
 								+ line.substring(startIndex, line.length()).indexOf(parsingKeys[index + 1]);
 
-						resultsList.add(line.substring(startIndex, endIndex));
+						resultsList.add(line.substring(startIndex, endIndex).replace("&#39;", "'"));
 						// System.out.println("\t" + line.substring(startIndex, endIndex));
 					}
 				}
@@ -205,7 +205,7 @@ public class Parser {
 					String publisher = null;
 					try {
 						publisher = line.substring(startIndex, endIndex);
-						System.out.println("\tpublisher: " + publisher);
+						// System.out.println("\tpublisher: " + publisher);
 					} catch (StringIndexOutOfBoundsException e) {
 						System.err.println("\tCuld not parse >Publisher<!");
 						LOGGER.log(Level.FINER, "\tCuld not parse >Publisher<!");

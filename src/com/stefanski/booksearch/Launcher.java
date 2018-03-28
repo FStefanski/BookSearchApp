@@ -82,7 +82,7 @@ public class Launcher {
 
 		if (isUsePreviousResult()) {
 
-			// Load all collected item
+			// Load all collected items
 			DataStore.getInstance().doDeserialization(initialWebLink);
 
 			// Print all collected items
@@ -91,6 +91,7 @@ public class Launcher {
 		} else {
 			// Download the initial web page with search results or use previous results.
 			downloadSearchResults(initialWebLink);
+			// initialWebLink.setDownloadStatus(DownloadStatus.SUCCESS);
 
 			// Find and save in DataStore all search results URLs in the initial webpage.
 			runParseSearchResults(initialWebLink);

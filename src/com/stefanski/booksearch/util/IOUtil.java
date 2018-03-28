@@ -1,7 +1,6 @@
 package com.stefanski.booksearch.util;
 
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -9,6 +8,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -50,6 +50,7 @@ public class IOUtil {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+
 		return text.toString();
 	}
 
@@ -81,8 +82,10 @@ public class IOUtil {
 		}
 		file = new File(webLink.getWebPageFilePath() + webLink.getWebPageFileName());
 
-		try (BufferedWriter writer = new BufferedWriter(
-				new OutputStreamWriter(new FileOutputStream(file), UTF_ENCODING))) {
+		// try (BufferedWriter writer = new BufferedWriter(
+		// new OutputStreamWriter(new FileOutputStream(file), UTF_ENCODING))) {
+		try (PrintWriter writer = new PrintWriter(new OutputStreamWriter(new FileOutputStream(file), UTF_ENCODING))) {
+
 			writer.write(webPage);
 			if (webLink instanceof InitialWebLink) {
 				System.out.println("\t--DONE!");

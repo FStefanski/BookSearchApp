@@ -13,10 +13,10 @@ package com.stefanski.booksearch.constants;
  */
 public class SearchAndIO {
 
-	private static String searchFor = "sql"; // lord%20of%20the%20rings
+	private static String searchFor = "java%20book"; // lord%20of%20the%20rings%20book
 	private static final String SEARCH_RESULTS_FILE_PATH = System.getProperty("user.dir")
 			+ "\\downloads\\results_for\\";
-	private static final String UTF_ENCODING = "UTF-8";
+	private static final String UTF_ENCODING = "utf-8";
 
 	private SearchAndIO() {
 	}

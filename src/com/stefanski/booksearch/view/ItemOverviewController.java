@@ -4,6 +4,7 @@ import com.stefanski.booksearch.Viewer;
 import com.stefanski.booksearch.models.ItemModel;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Hyperlink;
 import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.TableColumn;
@@ -42,6 +43,8 @@ public class ItemOverviewController {
 	private Label isbnLabel;
 	@FXML
 	private Label amazonRatingLabel;
+	@FXML
+	private Hyperlink amazonUrlLabel;
 
 	// cover view
 	private String coverURL;
@@ -114,6 +117,7 @@ public class ItemOverviewController {
 			publicationYearLabel.setText(itemModel.getPublicationYear().toString());
 			isbnLabel.setText(itemModel.getIsbn());
 			amazonRatingLabel.setText(Double.toString(itemModel.getAmazonRating()));
+			amazonUrlLabel.setText(itemModel.getAmazonUrl());
 
 			setCoverURL(itemModel.getCoverURL());
 		} else {
@@ -124,6 +128,7 @@ public class ItemOverviewController {
 			publicationYearLabel.setText("");
 			isbnLabel.setText("");
 			amazonRatingLabel.setText("");
+			amazonUrlLabel.setText("");
 
 			setCoverURL("file:resources/images/noImageAvalible.jpg");
 		}
