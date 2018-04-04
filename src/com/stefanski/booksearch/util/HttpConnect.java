@@ -20,7 +20,7 @@ public class HttpConnect {
 	 */
 	public static String download(String sourceUrl) throws MalformedURLException, URISyntaxException {
 
-		System.out.println("\t>> HttpConnect -- START -> Downloading: " + sourceUrl);
+		System.out.println("\t>> HttpConnect -- START -> Downloading: " + sourceUrl.substring(0, 65));
 
 		URL url = new URI(sourceUrl).toURL();
 
@@ -52,7 +52,7 @@ public class HttpConnect {
 				int responseCode = connection.getResponseCode();
 				if (responseCode >= 200 && responseCode < 300) {
 
-					TimeUnit.SECONDS.sleep((long) 1.5);
+					// TimeUnit.SECONDS.sleep((long) 1.5);
 
 					System.out.println("\t\t-- Reading URL success, response code: " + responseCode);
 					System.out.println("\t>> HttpConnect -- END");
@@ -62,7 +62,7 @@ public class HttpConnect {
 							? ("\t\t-- Reading URL failed, response code: " + responseCode)
 							: ((connectAttemps % 20 == 0) ? (", \n\t\t\t" + responseCode) : (", " + responseCode)));
 
-					TimeUnit.SECONDS.sleep((long) 1.5);
+					// TimeUnit.SECONDS.sleep((long) 1.5);
 				}
 
 			} catch (Exception e) {

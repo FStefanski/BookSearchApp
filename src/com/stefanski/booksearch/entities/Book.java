@@ -51,8 +51,7 @@ public class Book extends Item implements Shareable, Serializable {
 	@Override
 	public String toString() {
 		return "[id=" + super.getId() + ", \"" + super.getTitle() + "\" by " + Arrays.toString(authors) + ", "
-				+ publisher + " (" + publicationYear + "), " + isbn + ", " + amazonRating + " of of 5 stars, "
-				+ coverURL + "]";
+				+ publisher + " (" + publicationYear + "), " + isbn + ", " + amazonRating + " of of 5 stars]";
 	}
 
 	public Year getPublicationYear() {
