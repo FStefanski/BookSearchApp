@@ -32,3 +32,10 @@
   beginners" title</li>
   
   <br>
+  
+   <br>
+  <b> Demo: </b>  <br>
+ 
+ ![Demo](https://github.com/FStefanski/BookSearchApp/blob/master/resources/images/BookSearchApp.gif)
+
+  
