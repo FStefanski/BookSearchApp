@@ -1,5 +1,11 @@
 # BookSearchApp
 <br>
+  <b>Application features:</b>
+  <li>Uses amazon.com to find books for given title.</li>
+  <li>Concurrently downloads of result web pages and parses them for books details.</li>
+  <li>Presents the results in GUI.</li>
+  
+<br>
   <b>Project assumptions:</b>
   <li>There are no API's.</li>
   <li>There is no other source where I can get the data from (no databases,
@@ -13,7 +19,6 @@
   stable way to get the data. As soon as the page changes, your parser is done
   for.</li>
   
- 
   <br>
   <b>Allowed parameters format:</b>
   <li>parameter: <b>title</b> - <code>search for this "title"</code></li>
@@ -32,8 +37,6 @@
   beginners" title</li>
   
   <br>
-  
-   <br>
   <b> Demo: </b>  <br>
  
  ![Demo](https://github.com/FStefanski/BookSearchApp/blob/master/resources/images/BookSearchApp.gif)
