@@ -25,20 +25,7 @@ import com.stefanski.booksearch.util.Parser;
 
 /**
  * <br>
- * <b>Project assumptions:</b>
- * <li>There are no API's.</li>
- * <li>There is no other source where I can get the data from (no databases,
- * feeds and such).</li>
- * <li>There is no access to the source files (data from public web sites).</li>
- * <li>Let's say the data is normal text, displayed in a <code>HTML</code>
- * page.</li>
- * <li>Although there are <code>HTML</code> parsing libraries like
- * <code>jsoup</code> for practice reason they won't be used.</li>
- * <li>In the case of <code>HTML</code> parsing, I know that there is no actual
- * stable way to get the data. As soon as the page changes, your parser is done
- * for.</li>
- * 
- *
+ * <b>Application Launcher</b>
  * <br>
  * <b>Allowed parameters format:</b>
  * <li>parameter: <b>title</b> - <code>search for this "title"</code></li>
@@ -138,7 +125,7 @@ public class Launcher {
 	 * 
 	 * @param args
 	 */
-	private static void initializeNewSearch(String[] args) {
+	public static void initializeNewSearch(String[] args) {
 
 		String title = "";
 		if (args.length > 0 && args[0].equals("-t")) {
@@ -179,7 +166,7 @@ public class Launcher {
 	 * 
 	 * @param initialWebLink
 	 */
-	private static void downloadSearchResults(InitialWebLink initialWebLink) {
+	public static void downloadSearchResults(InitialWebLink initialWebLink) {
 
 		if (Launcher.isUsePreviousResult()) {
 			initialWebLink.setDownloadStatus(DownloadStatus.SUCCESS);
@@ -193,7 +180,7 @@ public class Launcher {
 	 * 
 	 * @param initialWebLink
 	 */
-	private static void runParseSearchResults(InitialWebLink initialWebLink) {
+	public static void runParseSearchResults(InitialWebLink initialWebLink) {
 
 		WebLinksDao webLinksDao = new WebLinksDao();
 		Parser newParser = new Parser();
@@ -228,7 +215,7 @@ public class Launcher {
 	 * Run background multithread web page download.
 	 * 
 	 */
-	private static void runDownloaderJob() {
+	public static void runDownloaderJob() {
 		// If passing true - we want download all web links (web pages) in the system.
 		WebpageDownloaderTask task = new WebpageDownloaderTask(true);
 
@@ -249,7 +236,7 @@ public class Launcher {
 	 * 
 	 * @param initialWebLink
 	 */
-	private static void runParserItems() {
+	public static void runParserItems() {
 		Parser newParser = new Parser();
 		WebLinksDao webLinksDao = new WebLinksDao();
 		ItemsDao itemsDao = new ItemsDao();
@@ -285,7 +272,7 @@ public class Launcher {
 	/**
 	 * Print all collected items.
 	 */
-	private static void printAllItems() {
+	public static void printAllItems() {
 
 		ItemsDao itemsDao = new ItemsDao();
 		System.out.println("\n>> Items saved: ");
