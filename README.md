@@ -38,7 +38,7 @@
   
   <br>
   <b> Demo: </b>  <br>
- <br>
+  
  ![Demo](https://github.com/FStefanski/BookSearchApp/blob/master/resources/images/BookSearchApp.gif)
 
   
