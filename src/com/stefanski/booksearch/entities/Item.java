@@ -27,6 +27,44 @@ public abstract class Item implements Serializable {
 	 */
 	public abstract boolean isRecommendable();
 
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + (int) (id ^ (id >>> 32));
+		result = prime * result + ((itemType == null) ? 0 : itemType.hashCode());
+		result = prime * result + ((title == null) ? 0 : title.hashCode());
+		result = prime * result + ((webLink == null) ? 0 : webLink.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Item other = (Item) obj;
+		if (id != other.id)
+			return false;
+		if (itemType != other.itemType)
+			return false;
+		if (title == null) {
+			if (other.title != null)
+				return false;
+		} else if (!title.equals(other.title))
+			return false;
+		if (webLink == null) {
+			if (other.webLink != null)
+				return false;
+		} else if (!webLink.equals(other.webLink))
+			return false;
+		return true;
+	}
+	
 	public long getId() {
 		return id;
 	}
@@ -58,4 +96,5 @@ public abstract class Item implements Serializable {
 	public void setItemType(ItemType itemType) {
 		this.itemType = itemType;
 	}
+
 }

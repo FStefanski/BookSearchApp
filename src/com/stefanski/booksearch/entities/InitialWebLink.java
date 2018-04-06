@@ -39,6 +39,31 @@ public class InitialWebLink extends WebLink {
 				+ ",\n\t\t\t\t\t status=\t" + getDownloadStatus() + "]";
 	}
 
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = super.hashCode();
+		result = prime * result + ((searchFor == null) ? 0 : searchFor.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (!super.equals(obj))
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		InitialWebLink other = (InitialWebLink) obj;
+		if (searchFor == null) {
+			if (other.searchFor != null)
+				return false;
+		} else if (!searchFor.equals(other.searchFor))
+			return false;
+		return true;
+	}
+
 	public String getSearchFor() {
 		return searchFor;
 	}

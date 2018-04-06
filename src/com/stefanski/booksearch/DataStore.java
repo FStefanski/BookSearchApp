@@ -90,6 +90,37 @@ public class DataStore implements Serializable {
 		}
 	}
 
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((ItemList == null) ? 0 : ItemList.hashCode());
+		result = prime * result + ((webLinkList == null) ? 0 : webLinkList.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		DataStore other = (DataStore) obj;
+		if (ItemList == null) {
+			if (other.ItemList != null)
+				return false;
+		} else if (!ItemList.equals(other.ItemList))
+			return false;
+		if (webLinkList == null) {
+			if (other.webLinkList != null)
+				return false;
+		} else if (!webLinkList.equals(other.webLinkList))
+			return false;
+		return true;
+	}
+	
 	/**
 	 * Create database for results...
 	 */
@@ -119,5 +150,6 @@ public class DataStore implements Serializable {
 	public void setItemList(List<Item> ItemList) {
 		this.ItemList = ItemList;
 	}
+
 
 }
