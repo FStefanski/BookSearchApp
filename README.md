@@ -22,9 +22,7 @@
   <br>
   <b> Applied technologies: </b>
   <li>Java 8</li>
-  <li>Spring 5 MVC</li>
-  <li>Hibernate 5 ORM</li>
-  <li>MySQL 6.3</li>
+  <li>Java FX</li>
   
   <br>
   <b>Allowed parameters format:</b>
